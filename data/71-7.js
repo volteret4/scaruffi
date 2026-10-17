@@ -1,0 +1,4 @@
+// Sección 7 · 2000 — generado por tools/build_data.py.
+ROCK.add([
+{"id":"year-2000","tracks":[{"a":"Mariah Carey","t":"One Sweet Day","k":"s","p":304,"s":"7"},{"a":"Elton John","t":"Candle in the Wind","k":"s","p":304,"s":"7"},{"a":"Bing Crosby","t":"White Christmas","k":"s","p":304,"s":"7"}],"artists":[],"name":"2000: apogeo y caída de la industria","family":"pop","place":"Mundo","desc":"Los noventa ven el apogeo y la caída de la industria discográfica: el CD multiplica sus ingresos (cinco «majors» controlan el 95% de los discos vendidos en 1999), Mariah Carey bate récords de Presley y los Beatles y «Candle In The Wind» de Elton John supera a «White Christmas» como canción más vendida. Pero en 1999 Shawn Fanning funda Napster y millones de internautas dejan de pagar por la música: en 2001 las ventas caen por primera vez en años.","start":1996,"end":2001,"influences":["pop-90s","britpop"],"secs":["7"]}
+]);

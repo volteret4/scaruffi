@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historia del rock: timeline</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Historia del rock <span>· 1951-2000, según Piero Scaruffi</span></h1>
+    <p class="sub">Timeline de géneros, influencias, discos y canciones, recopilados sección a sección de <i>A History of Rock Music 1951-2000</i> (Piero Scaruffi), con su vídeo en YouTube.</p>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<nav class="controls">
+  <input id="q" type="search" placeholder="Buscar género, artista, disco, canción…" autocomplete="off">
+  <button id="ftoggle" class="ftoggle" type="button" aria-expanded="false">Filtros</button>
+  <div class="views" role="tablist">
+    <button data-view="timeline" class="on">Timeline</button>
+    <button data-view="focus">Individual</button>
+    <button data-view="bysec">Secciones</button>
+    <button data-view="discs">Discos</button>
+    <button data-view="ess">Mejores discos</button>
+    <button data-view="list">Géneros</button>
+  </div>
+  <div class="families" id="families"></div>
+</nav>
+
+<main>
+  <section id="timeline" class="view on">
+    <p class="hint"><span class="mouse">Pasa el ratón por un género para ver de dónde viene (líneas entrantes) y qué engendra (salientes). Clic para abrir la ficha; clic en una zona vacía para cerrarla.</span><span class="touch">Desliza para recorrer los años; toca un género para abrir su ficha.</span></p>
+    <div class="scroller" id="scroller"><svg id="svg"></svg></div>
+  </section>
+  <section id="focus" class="view">
+    <div class="fbar">
+      <input id="fq" type="search" list="focus-names" placeholder="Elige un género…" autocomplete="off">
+      <datalist id="focus-names"></datalist>
+      <button id="freset" type="button">Reiniciar</button>
+    </div>
+    <p class="hint" id="fhint">Escribe y elige un género: verás de qué géneros viene y a cuáles influye. Pulsa «+» en cualquiera de ellos para desplegar también sus relaciones; clic en un género abre su ficha.</p>
+    <div class="scroller" id="fscroller"><svg id="fsvg"></svg></div>
+  </section>
+  <section id="bysec" class="view discs"></section>
+  <section id="discs" class="view discs"></section>
+  <section id="ess" class="view discs"></section>
+  <section id="list" class="view"></section>
+</main>
+
+<aside id="panel" aria-hidden="true">
+  <button class="close" id="close" aria-label="Cerrar">×</button>
+  <div id="detail"></div>
+</aside>
+
+<script src="data/core.js"></script>
+<script src="data/books.js"></script>
+<!-- secciones:inicio -->
+<script src="data/01-2_1.js"></script>
+<script src="data/02-2_2.js"></script>
+<script src="data/03-2_3.js"></script>
+<script src="data/04-2_4.js"></script>
+<script src="data/05-2_5.js"></script>
+<script src="data/06-2_6.js"></script>
+<script src="data/07-2_7.js"></script>
+<script src="data/08-3_1.js"></script>
+<script src="data/09-3_2.js"></script>
+<script src="data/10-3_3.js"></script>
+<script src="data/11-3_4.js"></script>
+<script src="data/12-3_5.js"></script>
+<script src="data/13-3_6.js"></script>
+<script src="data/14-3_7.js"></script>
+<script src="data/15-3_8.js"></script>
+<script src="data/16-3_9.js"></script>
+<script src="data/17-4_1.js"></script>
+<script src="data/18-4_2.js"></script>
+<script src="data/19-4_3.js"></script>
+<script src="data/20-4_4.js"></script>
+<script src="data/21-4_5.js"></script>
+<script src="data/22-4_6.js"></script>
+<script src="data/23-4_7.js"></script>
+<script src="data/24-4_8.js"></script>
+<script src="data/25-5_1.js"></script>
+<script src="data/26-5_2.js"></script>
+<script src="data/27-5_3.js"></script>
+<script src="data/28-5_4.js"></script>
+<script src="data/29-5_5.js"></script>
+<script src="data/30-5_6.js"></script>
+<script src="data/31-5_7.js"></script>
+<script src="data/32-5_8.js"></script>
+<script src="data/33-5_9.js"></script>
+<script src="data/34-5_10.js"></script>
+<script src="data/35-5_11.js"></script>
+<script src="data/36-5_12.js"></script>
+<script src="data/37-5_13.js"></script>
+<script src="data/38-5_14.js"></script>
+<script src="data/39-5_15.js"></script>
+<script src="data/40-5_16.js"></script>
+<script src="data/41-5_17.js"></script>
+<script src="data/42-5_18.js"></script>
+<script src="data/43-5_19.js"></script>
+<script src="data/44-5_20.js"></script>
+<script src="data/45-5_21.js"></script>
+<script src="data/46-5_22.js"></script>
+<script src="data/47-5_23.js"></script>
+<script src="data/48-5_24.js"></script>
+<script src="data/49-6_1.js"></script>
+<script src="data/50-6_2.js"></script>
+<script src="data/51-6_3.js"></script>
+<script src="data/52-6_4.js"></script>
+<script src="data/53-6_5.js"></script>
+<script src="data/54-6_6.js"></script>
+<script src="data/55-6_7.js"></script>
+<script src="data/56-6_8.js"></script>
+<script src="data/57-6_9.js"></script>
+<script src="data/58-6_10.js"></script>
+<script src="data/59-6_11.js"></script>
+<script src="data/60-6_12.js"></script>
+<script src="data/61-6_13.js"></script>
+<script src="data/62-6_14.js"></script>
+<script src="data/63-6_15.js"></script>
+<script src="data/64-6_16.js"></script>
+<script src="data/65-6_17.js"></script>
+<script src="data/66-6_18.js"></script>
+<script src="data/67-6_19.js"></script>
+<script src="data/68-6_20.js"></script>
+<script src="data/69-6_21.js"></script>
+<script src="data/70-6_22.js"></script>
+<script src="data/71-7.js"></script>
+<!-- secciones:fin -->
+<script src="data/best.js"></script>
+<script src="data/yt.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

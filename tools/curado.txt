@@ -1,0 +1,3201 @@
+# Curación manual de cada sección del libro (se lee junto a la extracción del PDF).
+#
+# == <núm. sección>
+# id / name / fam / years / place / from (ids de los que viene) / desc: metadatos del género
+# Líneas de corrección (tras «fix:»), una por título (#n = índice en la sección):
+#   N Artista            atribuye el título N
+#   N-M Artista          atribuye un rango
+#   N Artista @1958      y fija el año
+#   N Artista =Título    y corrige el título
+#   N x                  descarta el título (no es un disco/canción)
+# Sin corrección se usa la atribución heurística de tools/extract.py.
+
+== 2.1
+id: antecedentes
+name: Antecedentes (1892-1950)
+fam: raices
+years: 1892-1950
+place: EE UU
+desc: Antes del rock'n'roll: Tin Pan Alley, los primeros discos de blues (Mamie Smith) y de «old-time music», el yodel de Jimmie Rodgers, el crooning de Bing Crosby, el boogie-woogie, el jump blues de Louis Jordan (nacimiento de facto del rhythm'n'blues), la guitarra jazzística de T-Bone Walker, Woody Guthrie como primer gran cantautor y la exótica de Les Baxter. En paralelo, la vanguardia clásica (Russolo, Satie, Varèse, Cage, Schaeffer) anticipa el ruido, el ambient y la electrónica.
+fix:
+1 Mamie Smith
+2 Trixie Smith
+3 Edgard Varese @1931
+4 Meade Lux Lewis @1929 =Honky Tonk Train Blues
+7 Thomas Dorsey @1932
+8 Woody Guthrie
+9-10 Louis Jordan
+11-12 T-Bone Walker
+13 Johnny Otis
+15 Roy Brown =Good Rockin' Tonight
+16-17 Wild Bill Moore
+18 Rodgers & Hammerstein @1949 =South Pacific
+19 Les Baxter @1950
+20 John Cage @1939 =Imaginary Landscape No. 1
+
+== 2.2
+id: rocknroll
+name: Rock'n'roll
+fam: raices
+years: 1951-1957
+place: EE UU
+from: antecedentes
+desc: Fusión de rhythm'n'blues y country, con mucho más peso del primero. Chuck Berry inventa en 1955 el rock'n'roll tal como se conocerá durante cincuenta años (la guitarra como instrumento protagonista, canciones propias que hablan a los adolescentes); Bo Diddley aporta el ritmo «hambone», Little Richard y Esquerita el histerismo y el maquillaje (el primer «decadence-rock»), Jerry Lee Lewis el piano feroz y Sun Records el rockabilly. Elvis Presley es, para Scaruffi, «la primera gran estafa del rock'n'roll». Buddy Holly y Eddie Cochran abren otra vía; en paralelo nacen el soul (Ray Charles), la exótica (Martin Denny, Esquivel), la música electrónica de cinta y, en Gran Bretaña, el skiffle.
+fix:
+0 Fats Domino
+2 Gunter Lee Carr
+4 Roscoe Gordon
+11-13 Chuck Berry
+14-15 Bo Diddley
+16-21 Little Richard
+22 Elvis Presley
+23-24 Jerry Lee Lewis
+25 Carl Perkins
+28 Junior Parker
+29 Joe Turner
+31 Little Willie John
+32-33 Elvis Presley
+34-35 Jerry Lee Lewis
+36-37 Elvis Presley
+38 Wilbert Harrison
+39-40 Eddie Cochran
+41-46 Buddy Holly
+48 Martin Denny
+49 Esquivel
+50 Ray Charles
+53 Louis & Bebe Barron
+54 Edgard Varese
+
+== 2.3
+id: before-flood
+name: Antes del diluvio
+fam: raices
+years: 1957-1962
+place: EE UU
+from: rocknroll
+desc: La «edad oscura» del rock'n'roll: los rebeldes son sustituidos por ídolos adolescentes educados y el Brill Building devuelve el poder a los compositores profesionales. Pero en esos años se incuban la revolución futura: la guitarra fuzz de Link Wray, los bailes de moda (el twist), el rock instrumental de guitarras (Duane Eddy, Ventures, Shadows), el calipso y el primer ska, el doo-wop más inventivo (Coasters, Drifters, Five Royales), el nacimiento del soul (Sam Cooke, Ray Charles, Motown, Stax), el estudio como instrumento de Joe Meek y el surf de los Beach Boys y del «muro de sonido» de Phil Spector.
+fix:
+0 Paul Anka
+4 Everly Brothers
+5 Link Wray
+6-7 Eddie Cochran
+9 Hank Ballard
+12-14 Duane Eddy
+20 Harry Belafonte
+21 Drifters
+22 Theophilus Beckford
+23-25 Coasters
+29 Ben E. King
+30-32 Drifters
+33-36 Five Royales
+40 Del Shannon
+41-42 Roy Orbison
+50 Joe Meek
+51 Tornados
+54 Crystals
+
+== 2.4
+id: folk-revival
+name: Folk revival y canción protesta
+fam: folk
+years: 1958-1965
+place: Greenwich Village
+from: antecedentes
+desc: El acontecimiento más importante del cambio de década: el folk revival (Kingston Trio, festival de Newport) convierte la música en algo más que entretenimiento. Con «Blowing In The Wind» de Dylan, la canción protesta se vuelve el paradigma del Greenwich Village y el folk-singer muta en cantautor. Otros buscan la innovación: Davy Graham, Sandy Bull (fusión de folk, blues, jazz y raga) y John Fahey, que inventa el «American primitivism».
+fix:
+0 Kingston Trio
+1 Joan Baez
+2 Bob Gibson
+3-4 Lee Hazlewood
+
+== 2.5
+id: british-invasion
+name: El diluvio: invasión británica y garage
+fam: psico
+years: 1963-1966
+place: Reino Unido / EE UU
+from: rocknroll, before-flood
+desc: El Mersey-beat lleva a su conclusión la idea de los Beach Boys (ritmo de rock'n'roll y melodía pop): los Beatles, «la segunda gran estafa del rock'n'roll», popularizan lo que surge del underground. Frente a ellos, las tres grandes bandas británicas de 1964: los Rolling Stones (que redefinen al intérprete, el concierto y la canción rock y fijan el eje cantante-chamán y guitarrista carismático), los Kinks (inventores del riff más famoso y del garage, el hard rock y el heavy metal) y los Animals; los Who llevan al límite el himno generacional y la ópera rock, y los Yardbirds establecen la supremacía de la guitarra. En EE UU la invasión británica desata el garage-rock, los proto-punks de cada ciudad (Kingsmen, Sonics, Standells, ? and the Mysterians, Monks).
+fix:
+0 Johnny Kidd & the Pirates
+2-6 Beach Boys
+7-17 Beatles
+18-20 Hollies
+43-49 Kinks
+50 Kinks
+52 Who
+59 Them
+60 Troggs
+62 Kingsmen
+63-65 Sonics
+66-67 Paul Revere & the Raiders
+68 Standells
+69 McCoys
+70 Strangeloves
+79 ? and the Mysterians
+80 Kinks
+81 Monks
+
+== 2.6
+id: soul
+name: Soul y Motown
+fam: negra
+years: 1963-1970
+place: Memphis / Detroit
+from: before-flood
+desc: Al otro lado del océano, la alternativa a los grupos británicos fue el heredero del rhythm'n'blues: el soul. El sonido Memphis (Wilson Pickett, Otis Redding, Sam & Dave) nace de bandas instrumentales casi anónimas como Booker T & the MG's; Motown triunfa con el soul melódico y bailable de Stevie Wonder, Smokey Robinson y el trío Holland-Dozier-Holland («quizá el mayor fenómeno pop de todos los tiempos»); Phil Spector lanza el «blue-eyed soul» con los Righteous Brothers, y James Brown, con su estilo percusivo, inventa el funk.
+fix:
+8-11 Stevie Wonder
+12-13 Temptations
+14 Miracles
+15 Martha & the Vandellas
+17-21 Supremes
+22-25 Four Tops
+27-30 James Brown
+
+== 2.7
+id: greenwich
+name: Contracultura: cantautores eléctricos
+fam: folk
+years: 1965-1969
+place: Greenwich Village
+from: folk-revival, rocknroll
+desc: La fusión de música y política convierte el rock en vehículo de la disidencia: la contracultura. Todo empieza con Bob Dylan, el músico más influyente de los sesenta, que redefine el rock como composición metafísica y libre (Highway 61 Revisited, Blonde On Blonde). La transición del folk-singer al cantautor eléctrico abre infinitas vías: Fred Neil, Tim Hardin, Neil Diamond, Paul Simon (el poeta del chico tímido y solitario), Donovan (la quintaesencia del ideal hippy) y Country Joe McDonald, agit-prop de Berkeley.
+fix:
+0-1 Bob Dylan
+2-6 Bob Dylan
+14-18 Bob Dylan
+19 Jesse Colin Young
+20 Fred Neil
+21-23 Tim Hardin
+31-35 Simon & Garfunkel
+
+== 2.7 | Progressive folk
+id: american-primitive
+name: Folk progresivo (American primitive)
+fam: folk
+years: 1963-1973
+place: EE UU
+from: folk-revival
+desc: John Fahey introduce el flujo de conciencia en el folk, lo convierte en música clásica y le hace cruzar la frontera entre Oriente y Occidente: el «raga occidental» de sus largas meditaciones a la guitarra evoca paisajes y fantasmas de pioneros. Robbie Basho lleva la guitarra solista de Fahey al misticismo oriental antes de que existieran el new age, la world music o la fusión.
+
+== 2.7 | Folk-rock
+id: folk-rock
+name: Folk-rock
+fam: folk
+years: 1965-1970
+place: California
+from: greenwich, british-invasion
+desc: Más invento de productores (Tom Wilson, Terry Melcher) que movimiento artístico: el espíritu del Mersey-beat en clave americana. Byrds y Beau Brummels crean el «jingle-jangle»; los Byrds encadenan folk-rock, acid-rock, raga-rock («Eight Miles High») y country-rock (Sweetheart Of The Rodeo). Mamas & Papas, Turtles, Lovin' Spoonful, Buffalo Springfield y, sobre todo, Tim Buckley, que funde folk, blues, jazz, psicodelia y música de cámara y convierte la voz en un instrumento (Happy Sad, Lorca, Starsailor).
+fix:
+57-61 Byrds
+62-63 Mamas & Papas
+64-65 Turtles
+66-67 Lovin' Spoonful
+69 Bob Dylan
+70-72 Tim Buckley
+74 Buffalo Springfield
+
+== 2.7 | Acid folk
+id: acid-folk
+name: Acid folk y agit-prop
+fam: folk
+years: 1965-1970
+place: Nueva York
+from: greenwich
+desc: El folk-rock al servicio de la contracultura: los Fugs, parodistas obscenos del Establishment y pioneros del collage y la cacofonía en estudio; los Holy Modal Rounders y su acid-folk borracho; los cacofónicos Godz y la Nihilist Spasm Band canadiense, con instrumentos caseros entre las spasm bands de Nueva Orleans, Albert Ayler y Sun Ra.
+fix:
+81 Nihilist Spasm Band
+
+== 2.7 | The Los Angeles freaks
+id: freaks
+name: Los freaks de Los Ángeles: Zappa y Beefheart
+fam: vanguardia
+years: 1966-1984
+place: Los Ángeles
+from: greenwich, rocknroll
+desc: El genio supremo de la contracultura, Frank Zappa, no conoce barreras de estilo ni reglas de armonía: coinventa el álbum conceptual, la ópera rock y el rock progresivo, usa el estudio como instrumento y compone con fragmentos de músicas preexistentes, todo al servicio de la sátira. Captain Beefheart, quizá el mayor músico de rock de todos los tiempos (el único con 214), mezcla blues del Delta, free jazz y vanguardia con estructuras oblicuas y dementes; Trout Mask Replica es «la principal contribución del rock a la historia de la música».
+fix:
+99-102 Captain Beefheart
+
+== 3.1
+id: acid-rock
+name: Psicodelia y acid-rock
+fam: psico
+years: 1965-1970
+place: San Francisco
+from: folk-rock, british-invasion, greenwich
+desc: En 1965 San Francisco se convierte en la ciudad más efervescente del país: los Grateful Dead tocan en los «acid tests» de Ken Kesey, nace la escena hippy y en 1966-67 llega el verano del amor. El acid-rock, evolución del folk-rock pensada como banda sonora del viaje de LSD, es el equivalente rockero de la pintura abstracta, el free jazz y la poesía beat: su gran invento es la «jam», con la guitarra eléctrica al mando y un espíritu zen en lugar del dolor del blues. Jefferson Airplane encarnan la era; los Grateful Dead inventan la improvisación colectiva libre (Anthem Of The Sun, Live Dead); Kaleidoscope, Moby Grape, Quicksilver, Blue Cheer o Fifty Foot Hose amplían el abanico. Monterey y Sgt Pepper (1967) convierten lo alternativo en mainstream. Fuera de California, Jimi Hendrix declara la guerra a la armonía occidental con su guitarra.
+fix:
+7 Jefferson Airplane
+21-26 Grateful Dead
+30 Electric Flag
+32 Alexander Spence
+41 Beatles
+98 H.P. Lovecraft
+99-100 Amboy Dukes
+101-104 Ultimate Spinach
+105 Les Maledictus Sound
+106-108 L'Infonie
+136-137 Pierre Henry
+
+== 3.1 | New York and the new Boheme
+id: velvet
+name: Nueva York: la nueva bohemia
+fam: psico
+years: 1965-1970
+place: Nueva York
+from: greenwich, acid-folk
+desc: La psicodelia de la heroína frente a la del LSD: los Velvet Underground, quizá la banda más influyente de toda la historia del rock, nacen dentro del espectáculo multimedia de Andy Warhol y fundan la vertiente «pesimista» de la psicodelia; su espíritu independiente, nihilista y subversivo se llamará punk diez años después. «Sister Ray» es, para Scaruffi, la obra maestra definitiva del rock. Alrededor: Blues Magoos, Pearls Before Swine (psych-folk de cámara), Cromagnon y los United States Of America de Joseph Byrd, pioneros de los teclados electrónicos.
+fix:
+43-49 Velvet Underground
+50-54 Velvet Underground
+56 Blues Magoos
+57-58 Mystic Tide
+60-61 Pearls Before Swine
+63 United States Of America
+64 Joseph Byrd
+
+== 3.1 | Los Angeles and acid-pop
+id: acid-pop
+name: Los Ángeles: acid-pop
+fam: psico
+years: 1966-1971
+place: Los Ángeles
+from: folk-rock, acid-rock
+desc: La psicodelia angelina desciende de los Byrds y se divide en varios campos: la novedad pop (Strawberry Alarm Clock), el rave-up crudo de los Seeds, la larga improvisación de Iron Butterfly (que ya titulaban un disco «Heavy» antes del heavy metal), el barroco de Love (Forever Changes) y, sobre todo, los Doors, quizá la banda más creativa de la historia del rock: su primer disco solo contiene obras maestras y Jim Morrison define al cantante de rock como artista. Spirit, Chocolate Watchband y la misa rock de los Electric Prunes completan la escena.
+fix:
+70 West Coast Pop Art Experimental Band
+73 Beach Boys
+74 Love
+85 Spirit
+87 Spirit
+88 Chocolate Watchband
+89 Electric Prunes
+
+== 3.1 | Texas and the freak-out
+id: freak-out
+name: Texas y el freak-out
+fam: psico
+years: 1966-1969
+place: Texas
+from: acid-rock, freaks
+desc: La escuela psicodélica tejana fue de las más auténticas: los 13th Floor Elevators, entre los primeros grupos psicodélicos, y los Red Crayola de Mayo Thompson, cuyo freak-out salvaje y cacofónico se adelantó décadas a Faust y Pere Ubu (Parable Of Arable Land).
+fix:
+91-93 Red Crayola
+
+== 3.1 | Britain and the light show
+id: british-psych
+name: Psicodelia británica
+fam: psico
+years: 1966-1979
+place: Londres
+from: acid-rock, british-invasion
+desc: La psicodelia británica fue un fenómeno menor y tardío con una excepción: Pink Floyd, que con Syd Barrett equilibran la jam tonal, el freak-out cacofónico y la cancioncilla excéntrica (The Piper At The Gates Of Dawn, A Saucerful Of Secrets) y luego convierten la psicodelia en un easy-listening de nuevo cuño (Dark Side Of The Moon). Light shows, el UFO Club y John Peel crean la infraestructura underground; destacan Tomorrow, la Incredible String Band (folk con músicas medievales y orientales), los agit-prop Deviants y Edgar Broughton, y en el continente los suecos Parson Sound / International Harvester y los holandeses Outsiders.
+fix:
+109-115 Pink Floyd
+124 Tomorrow
+128-130 Deviants
+131 Mick Farren
+133 Parson Sound
+135 Outsiders
+
+== 3.2
+id: blues-rock
+name: Blues revival y blues-rock
+fam: hard
+years: 1966-1972
+place: Londres
+from: british-invasion, acid-rock
+desc: John Mayall define con Bluesbreakers (con Eric Clapton) el rhythm'n'blues tocado por blancos europeos, el blues-rock, y siembra el progresivo con sus discos de jazz y lounge. Su equivalente americano es Al Kooper (Blues Project, Supersession, Blood Sweat & Tears). Cream, el primer power-trio, cambia la cara del rock británico con improvisación de jazz, distorsión y solos interminables; Fleetwood Mac de Peter Green y Ten Years After llevan del blues al hard rock. En San Francisco, Janis Joplin, Steve Miller y Santana; en Los Ángeles, Taj Mahal y Ry Cooder reconstruyen las tradiciones; Bob Seger casa el grito soul con el Detroit obrero.
+fix:
+0 John Mayall
+1-5 John Mayall
+6-7 Bob Dylan
+8 Blues Project
+9 Al Kooper, Mike Bloomfield & Stephen Stills
+10-11 Cream
+12-15 Fleetwood Mac
+16-18 Ten Years After
+29 Ry Cooder
+32-33 Bob Seger
+
+== 3.2 | Folk revival
+id: british-folk
+name: Folk-rock británico
+fam: folk
+years: 1967-1980
+place: Reino Unido
+from: folk-rock, british-psych
+desc: El folk-rock llega tarde a Gran Bretaña pero absorbe psicodelia, blues y jazz: Pentangle (Bert Jansch y John Renbourn) y sus suites con guiños al jazz y la clásica, Fairport Convention y Richard Thompson, Shirley Collins. La contribución más erudita es la de Van Morrison: Astral Weeks acuña una forma de canción abstracta y libre que funde soul, jazz, folk y psicodelia con la intensidad austera de la música de cámara.
+fix:
+37-42 Fairport Convention
+43 Shirley Collins
+
+== 3.2 | Neo-classical revival
+id: symphonic-rock
+name: Rock sinfónico
+fam: prog
+years: 1967-1970
+place: Reino Unido
+from: british-psych, british-invasion
+desc: El rock mezclado con música clásica: los Moody Blues, prototipo del rock sinfónico, con el mellotron simulando la orquesta («Nights In White Satin»); Procol Harum y su sonido de dos órganos («A Whiter Shade Of Pale»); The Nice, que deforman clásicos y estándares de jazz con jams psicodélicas y el virtuosismo de Keith Emerson.
+fix:
+54-58 Procol Harum
+
+== 3.2 | The revival of all revivals
+id: british-psych
+fix:
+64 Vivian Stanshall
+65 Bonzo Dog Doo Dah Band
+
+== 3.2 | American re-alignment
+id: country-rock
+name: Country-rock y roots-rock
+fam: raices
+years: 1968-1975
+place: EE UU
+from: folk-rock, greenwich, acid-rock
+desc: La reacción al rock político de Dylan y al acid-rock: vuelta a la canción breve y melódica y a la tradición blanca (country) y negra (blues). Gram Parsons inventa el country-rock (International Submarine Band, Sweetheart Of The Rodeo de los Byrds, Flying Burrito Brothers); The Band inventa el roots-rock con la austeridad de la música de cámara; Creedence Clearwater Revival hace lo propio con el swamp-blues de Luisiana; Flamin' Groovies, progenitores del power-pop; Crosby Stills Nash & Young y el «sonido West Coast»; y las Shaggs, precursoras del lo-fi.
+fix:
+69-70 Seatrain
+71-72 Band
+73-83 Creedence Clearwater Revival
+86 Crosby Stills Nash & Young
+87 Shaggs
+
+== 3.2 | Soul explorations
+id: soul
+fix:
+91-92 Aretha Franklin
+93 Dyke & the Blazers
+94 Sly & the Family Stone
+
+== 3.2 | New Orleans gumbo
+id: soul
+
+== 3.3
+id: solo-60s
+name: Carreras en solitario: cantautores de finales de los sesenta
+fam: folk
+years: 1967-1972
+place: EE UU / Canadá / Reino Unido
+from: greenwich, folk-rock, velvet
+desc: Los excéntricos de Los Ángeles (David Axelrod, cuyos breakbeats orquestales anticipan el trip-hop; Van Dyke Parks y su música de cámara pop; David Ackles, Kim Fowley, Wild Man Fischer) y los herederos del Greenwich (Laura Nyro, Eric Andersen, David Peel, Angus MacLise y Nico, cuyas letanías fúnebres inventan el rock gótico casi por accidente: Marble Index, Desert Shore). Canadá aporta a Leonard Cohen, Gordon Lightfoot, Joni Mitchell (Blue, Hejira) y Neil Young, que con Dylan y Springsteen forma la gran tríada «moral» de la música americana e inventa la guitarra distorsionada que influirá en el grunge. En Texas, Townes Van Zandt; en Gran Bretaña, Scott Walker, Nick Drake (Pink Moon), Roy Harper, John Martyn, Cat Stevens, Rod Stewart, Eric Burdon y Jack Bruce.
+fix:
+1-6 David Axelrod
+10 Jack Nitzsche
+16 Monkees
+17 John Stewart
+18 Norman Greenbaum
+22-23 Arlo Guthrie
+24-26 Eric Andersen
+27 David Peel
+30 Bob Neuwirth
+31 Nico
+39-40 Leonard Cohen
+51-53 Joni Mitchell
+60-67 Neil Young
+71-72 Townes Van Zandt
+76-78 Scott Walker
+84-86 Roy Harper
+87-96 John Martyn
+97-100 Cat Stevens
+101-102 Rod Stewart
+103-104 Eric Burdon
+106 Eric Burdon & War
+
+== 3.4
+id: electronic-rock
+name: Electrónica y rock
+fam: vanguardia
+years: 1966-1973
+place: EE UU
+from: antecedentes, acid-rock
+desc: El sintetizador de Robert Moog (1966) revoluciona el rock hasta la última fibra. La vanguardia lo adopta primero (Morton Subotnick); después llegan Mort Garson, Ron Geesin, Walter Carlos (Switched On Bach, primer disco electrónico en las listas; Sonic Seasonings anticipa el ambient), Lothar & The Hand People, Silver Apples (dúo de teclados electrónicos que se adelanta una década a la new wave y el synth-pop), Beaver & Krause, David Borden, Bo Hansson y Tonto's Expanding Head Band. El Minimoog portátil (1970) lleva el sintetizador a los escenarios.
+fix:
+0 Morton Subotnick
+19 Bo Hansson
+
+== 3.5
+id: prog-rock
+name: Rock progresivo
+fam: prog
+years: 1967-1976
+place: Reino Unido
+from: symphonic-rock, british-psych, blues-rock, freaks
+desc: Al emigrar a Gran Bretaña, el rock se convierte en mercancía de moda pero también se descontextualiza: lo que en EE UU era el diario de la juventud se vuelve en Gran Bretaña un ensayo. El progresivo no comenta la cultura juvenil sino que busca la innovación técnica: arranca con las óperas rock (S.F. Sorrow, Tommy) y los álbumes conceptuales, lo cimentan Traffic, Jeff Beck, Jethro Tull, Family y Genesis, y alcanza su cima con King Crimson (In The Court Of The Crimson King), Van Der Graaf Generator y Yes. Colosseum, la Third Ear Band (inventores de la world music), las variantes góticas (High Tide, Black Widow) y folk (Comus, Strawbs), Gentle Giant, Emerson Lake & Palmer y Roxy Music, que revoluciona el género y prepara la new wave y el synth-pop.
+fix:
+8 Blind Faith
+9 Jeff Beck Group
+10 Jeff Beck
+18-21 Genesis
+23 King Crimson
+29-31 King Crimson
+32 Robert Fripp & Brian Eno
+33 Robert Fripp
+34 Robert Fripp & Andy Summers
+35 David Sylvian & Robert Fripp
+36-38 Van Der Graaf Generator
+46 Yes
+52-53 Mark-Almond
+64 Comus
+67 Kingdom Come
+71-74 Jade Warrior
+77-78 Gentle Giant
+79-80 Emerson Lake & Palmer
+81 Roxy Music
+83-88 Roxy Music
+
+== 3.5 | Continental Europe
+id: euro-prog
+name: Progresivo continental
+fam: prog
+years: 1969-1978
+place: Europa
+from: prog-rock
+desc: El progresivo atrae más al público «intelectual» europeo que el rock'n'roll: Samla Mammas Manna en Suecia; Focus, Finch y Shocking Blue en Holanda; en Italia, una de las escuelas más prolíficas (PFM, Banco del Mutuo Soccorso, Balletto di Bronzo, Franco Battiato, Area, Picchio dal Pozzo). Francia llega más tarde pero supera a todas: Magma y su ópera de ciencia ficción (Mekanik Destruktiw Kommandoh) y Vangelis, de Aphrodite's Child (666) a las suites electrónicas y el new age.
+
+== 3.5 | France
+id: euro-prog
+fix:
+105-107 Magma
+108 Aphrodite's Child
+
+== 3.5 | USA
+id: jazz-rock
+name: Jazz-rock y fusión
+fam: prog
+years: 1969-1975
+place: EE UU
+from: freaks, prog-rock, soul
+desc: Bitches Brew de Miles Davis (1969) combina ritmos soul e instrumentos de rock amplificados y da un impulso tremendo al progresivo americano; Uncle Meat de Zappa es la respuesta del rock. Chicago y su fusión de vientos jazz y guitarras, Insect Trust, Gil Scott-Heron (precursor del rap con su spoken word), Flock, It's A Beautiful Day y Joy Of Cooking, uno de los primeros grupos liderados por mujeres.
+fix:
+115-117 Chicago
+118 Insect Trust
+120-121 Gil Scott-Heron
+124 Joy Of Cooking
+
+== 3.6
+id: canterbury
+name: Escuela de Canterbury
+fam: prog
+years: 1968-1984
+place: Canterbury
+from: british-psych, prog-rock, jazz-rock
+desc: Uno de los movimientos más importantes de la historia del rock nace en 1962 con los Wilde Flowers, de los que salen Soft Machine y Caravan. Soft Machine pasan del dadaísmo psicodélico al jazz-rock (3, con la «Moon In June» de Wyatt); Caravan hacen un jazz-rock más ligero y melódico; Nucleus, Keith Tippett, Egg; Gong de Daevid Allen, psicodelia cósmica y demente (Flying Teapot); Kevin Ayers, dandi decadente; Robert Wyatt y Rock Bottom, «una de las obras maestras supremas del rock»; Hatfield & The North, National Health; Mike Oldfield, que con Tubular Bells vuelve obsoleto el término «progresivo»; y la segunda generación de Henry Cow (Rock In Opposition), Slapp Happy y Art Bears.
+fix:
+1 Soft Machine
+2-6 Soft Machine
+8-13 Caravan
+29-32 Gong
+35 Kevin Ayers
+38-39 Matching Mole
+51 Mike Oldfield
+52-55 Henry Cow
+55 Henry Cow & Slapp Happy
+56 Slapp Happy
+57 Henry Cow & Slapp Happy
+61 System 7
+63 Lindsay Cooper
+65 News From Babel
+
+== 3.7
+id: kosmische
+name: Kosmische Musik y krautrock
+fam: prog
+years: 1968-1978
+place: Alemania
+from: acid-rock, electronic-rock, velvet, freaks
+desc: El rock británico recicla el americano; el alemán inventa otro tipo de rock (a menudo, ni siquiera rock). Los músicos alemanes ven la relación entre la psicodelia y la vanguardia electrónica de Stockhausen: en 1968 nace el Zodiak Free Arts Lab de Berlín, en 1969 debutan Can, en 1971 Tangerine Dream inventan la «kosmische musik» con sintetizadores y secuenciadores y el viaje del acid-rock se convierte en viaje por el cosmos; en 1972 la larga suite electrónica (Zeit, Irrlicht) fija el formato que se copiará treinta años. Amon Duul II (gótico teutón), Can (el estudio del ritmo y la textura: Tago Mago, Future Days), Holger Czukay (world music electrónica), Tangerine Dream, Klaus Schulze, Ash Ra Tempel, Guru Guru, Agitation Free y otros. Ningún movimiento, salvo los primeros rockeros, influyó en tantos músicos durante tantas décadas.
+fix:
+4 Amon Duul
+8 Amon Duul II
+16 Holger Czukay
+17-19 Holger Czukay & David Sylvian
+27 Tangerine Dream
+42 Peter Baumann
+44 Chris Franke
+89 Ash Ra Tempel
+90-91 Ash Ra Tempel
+92 Cosmic Jokers
+93 Manuel Gottsching
+94 Guru Guru
+95 Agitation Free
+97 Gruppe Between
+98 Xhol
+100 Organisation
+102 Passport
+103 Eloy
+
+== 3.7 | The soundtrack of industrial neurosis
+id: krautrock
+name: Krautrock: Cluster, Kraftwerk, Faust y Neu!
+fam: prog
+years: 1970-1979
+place: Alemania
+from: kosmische, velvet, electronic-rock
+desc: Sin interés por la psicodelia ni por el universo, fascinados morbosamente por la psique del siglo XX. Kluster/Cluster pasan de la disonancia electrónica a los drones y al ambient (Zuckerzeit, Harmonia, Grosses Wasser); Kraftwerk funden electrónica, sonido industrial y melodía pop, sustituyen la batería por ritmos electrónicos y engendran a la vez la música industrial y la disco (Autobahn); Faust, el primer grupo «lo-fi», collages expresionistas y una de las visiones más líricas de la alienación moderna; Neu!, el «motorik beat» de Klaus Dinger y la repetición obsesiva.
+fix:
+49-50 Cluster
+50 Harmonia
+69 Michael Rother
+70-71 La Dusseldorf
+
+== 3.7 | Spiritual music
+id: spiritual
+name: Música espiritual alemana
+fam: vanguardia
+years: 1971-1989
+place: Alemania
+from: kosmische
+desc: Deuter y Popol Vuh convierten el misticismo hippy en un nuevo género. Deuter, pionero de la world music, une vanguardia occidental y espiritualidad oriental (Aum, la primera misa indo-occidental). Popol Vuh de Florian Fricke pasa del Moog de Affenstunde a la humildad acústica de In Den Gaerten Pharaos y Hosianna Mantra, que eliminan el ritmo (el Tiempo) de la pintura sonora espiritual. Eberhard Schoener, y en el encuentro con la vanguardia Peter Michael Hamel, Stephan Micus y Michael Hoenig, que anticipa el ambient house.
+fix:
+74 Deuter
+81-85 Popol Vuh
+86-88 Eberhard Schoener
+
+== 3.7 | German prog-rock
+id: kosmische
+
+== 3.7 | Meet the avantgarde
+id: spiritual
+fix:
+104-111 Peter Michael Hamel
+
+== 3.8
+id: hard-rock
+name: Hard rock
+fam: hard
+years: 1969-1979
+place: Reino Unido / EE UU
+from: blues-rock, british-invasion, acid-rock
+desc: El hard rock marca el fin de los creativos sesenta: sigue basado en el blues, pero más rápido, ruidoso y fuerte, y entierra el sufrimiento negro bajo miles de decibelios. Precedido por Cream, Blue Cheer y Guess Who, lo definen Led Zeppelin, hijos del blues que lo tocan como música para el cuerpo y que imponen el LP como formato del rock. En Gran Bretaña, Free, Status Quo, Thin Lizzy, UFO, Uriah Heep, Slade, Faces, Deep Purple (el estereotipo del género), Black Sabbath (cimientos del black y el doom metal) y Queen, los bromistas del movimiento. En EE UU, Mountain, James Gang, Grand Funk Railroad, Montrose, Bachman-Turner Overdrive y Heart.
+fix:
+0-1 Led Zeppelin
+3-7 Led Zeppelin
+25-26 Free
+27 Faces
+29-30 Deep Purple
+35-37 Queen
+38 Bad Company
+39-40 Mountain
+44 Bachman-Turner Overdrive
+45 Heart
+
+== 3.8 | Detroit
+id: detroit
+name: Detroit: MC5 y Stooges
+fam: punk
+years: 1968-1973
+place: Detroit
+from: velvet, british-invasion, acid-rock
+desc: La ciudad más industrial de EE UU y cuartel de los elementos más extremistas de la contracultura: un rock'n'roll feroz y ruidoso se convierte en la voz de los obreros y de sus hijos. Los MC5 de John Sinclair, ala revolucionaria de las revueltas estudiantiles (Kick Out The Jams, «el equivalente rockero de una explosión nuclear»); los Stooges de Iggy Pop, síntesis de Chuck Berry, Rolling Stones, Velvet Underground y Doors que inventa el punk-rock («1970») y el voodoobilly («TV Eye»). Un nuevo rock'n'roll fundado en la violencia extrema.
+fix:
+8 Frost
+9 MC5
+12 Stooges
+13 Doors
+15-17 Stooges
+
+== 3.8 | Southern waltz
+id: southern-rock
+name: Rock sureño
+fam: hard
+years: 1969-1977
+place: Sur de EE UU
+from: blues-rock, country-rock, acid-rock
+desc: Los estados del sur desarrollan sus propias vibraciones «duras», enraizadas en el boogie y el honky-tonk de los saloons. Los Allman Brothers, primera gran banda desde los Grateful Dead para la que el directo improvisado importa más que el disco (Live At Fillmore East); ZZ Top, enciclopedia de estilos sureños (Tres Hombres); la oscura Hampton Grease Band; Lynyrd Skynyrd y el estilo de vida del macho sureño reaccionario; Outlaws.
+fix:
+49 Allman Brothers
+50-51 Allman Brothers
+57 Allman Brothers
+61 Outlaws
+
+== 3.9
+id: minimalism
+name: Vanguardia: minimalismo y electrónica en vivo
+fam: vanguardia
+years: 1961-1985
+place: Nueva York / California
+from: antecedentes
+desc: De las escuelas de vanguardia, la más relevante para el rock fue el minimalismo. La Monte Young y su Theater Of Eternal Music (Tony Conrad, John Cale, Jon Hassell, Terry Riley) crean una música de ondas semiestacionarias; Terry Riley la populariza con «In C» y «A Rainbow In Curved Air»; Steve Reich es el maestro de la repetición; Philip Glass se acerca a la música popular. En la electrónica en vivo: Morton Subotnick, Tod Dockstader, Musica Elettronica Viva, Gordon Mumma, Alvin Lucier, Phill Niblock y la composición por ordenador.
+fix:
+0-1 La Monte Young
+2-6 Terry Riley
+7-10 Steve Reich
+11-12 Philip Glass
+13-15 Morton Subotnick
+18 Musica Elettronica Viva
+19-20 Gordon Mumma
+22-23 Alvin Lucier
+24 Phill Niblock
+25 Laurie Spiegel
+
+== 4.1
+id: psych-madness
+name: Locura psicodélica y space-rock
+fam: psico
+years: 1970-1976
+place: Reino Unido / EE UU / Japón
+from: british-psych, acid-rock, hard-rock
+desc: El boom psicodélico y el desacondicionamiento hippy alumbran una generación de originales: Syd Barrett y sus dos obras maestras de folk psicodélico (Madcap Laughs, Barrett), Twink y los Pink Fairies, Peter Green (The End Of The Game), Hawkwind, inventores del space-rock entre la cultura hippy y el punk. En EE UU, Bruce Palmer, David Crosby (If I Could Only Remember My Name), Merrell Fankhauser y Mu, Ya Ho Wha 13. En Japón nace el space-rock con Hadaka no Rallizes, la Taj Mahal Travellers («La Monte Young con ácido»), Keiji Haino y Fushitsusha.
+fix:
+0-1 Syd Barrett
+6 Syd Barrett
+7 Twink
+8-10 Pink Fairies
+16 David Crosby
+17 Surfaris
+18 Mu
+19 Merrell Fankhauser
+21 Strange
+22 Jacks
+28 Fushitsusha
+32-35 Keiji Haino
+36 Simply Saucer
+
+== 4.2
+id: country-rock
+desc: En los setenta, el reajuste a los viejos valores (blues, folk, country) convierte al rock en uno de los mayores éxitos del consumismo: el Establishment ya no intenta destruirlo, lo absorbe. El country-rock de Gram Parsons es una moda enorme: Commander Cody, New Riders Of The Purple Sage, Manassas, Nitty Gritty Dirt Band, Poco y los Eagles (Desperado, Hotel California); en Nashville surgen los «outlaws» (Waylon Jennings, Willie Nelson, Kris Kristofferson). El roots-rock sigue con Hot Tuna, Little Feat y Doobie Brothers, y la nostalgia recupera el blues (Roy Buchanan, Bonnie Raitt), la armonía vocal (Manhattan Transfer, Roches, McGarrigle Sisters) y los cincuenta (American Graffiti).
+fix:
+4 Manassas
+5-6 Nitty Gritty Dirt Band
+9 Waylon Jennings, Willie Nelson, Tompall Glaser & Jessi Colter
+33 x
+
+== 4.2 | Celtic revival 1971-74
+id: celtic
+name: Revival celta
+fam: folk
+years: 1971-1982
+place: Bretaña / Irlanda
+from: british-folk
+desc: Uno de los grandes temas del folk revival: el redescubrimiento de la tradición celta. Alan Stivell inicia el fenómeno comercial con el arpa céltica (Tir Na Nog / Symphonie Celtique); los Chieftains alcanzan la fama con discos menos auténticos y más creativos; Clannad introduce electrónica y world music y lanza la carrera de Enya.
+fix:
+10-12 Alan Stivell
+13-14 Chieftains
+15-16 Clannad
+
+== 4.2 | Soul 1970-1972
+id: soul
+fix:
+21 Curtis Mayfield
+22-25 Stevie Wonder
+
+== 4.2 | Reggae 1967-1973
+id: reggae
+name: Reggae y dub
+fam: negra
+years: 1967-1980
+place: Jamaica / Reino Unido
+from: before-flood, soul
+desc: El reggae se populariza en el Reino Unido con Prince Buster y Desmond Dekker; Jimmy Cliff lo casa con el «paz y amor» hippy y los Maytals le dan nombre. Los sound systems de los guetos convierten a los «selectors» en los verdaderos animadores: el «toasting» sobre los discos será tan importante como la música. Bob Marley y los Wailers lo llevan a Occidente; Burning Spear firma quizá su cima artística (Marcus Garvey). Los ingenieros remezclan las caras B quitando las voces: King Tubby inventa el dub usando la mesa de mezclas como un instrumento, y Lee Perry (Super Ape) y Augustus Pablo fijan el canon.
+fix:
+34-38 Bob Marley & the Wailers
+40 King Tubby & Lee Perry
+41-43 Lee Perry
+
+== 4.2 | Roots-rock 1971-73
+id: country-rock
+fix:
+45 Hot Tuna
+49-52 Doobie Brothers
+
+== 4.2 | Progressive bluegrass 1971-75
+id: newgrass
+name: Bluegrass progresivo y jazzgrass
+fam: folk
+years: 1971-1985
+place: EE UU
+from: american-primitive, country-rock
+desc: Una alternativa artística al country-rock, hija del primitivismo de John Fahey: Leo Kottke y sus excursiones de guitarra, John Hartford, Norman Blake, Michael Hurley (el mejor discípulo del acid-folk de los Holy Modal Rounders), el «jazzgrass» de David Grisman (con Tony Rice y Mark O'Connor) y el improvisador Eugene Chadbourne.
+fix:
+64-66 David Grisman
+67 Mark O'Connor
+69-70 Eugene Chadbourne
+
+== 4.2 | Nostalgia 1972-76
+id: country-rock
+fix:
+71 Roy Buchanan
+73 NRBQ
+74-75 Manhattan Transfer
+76 Leon Redbone
+78-79 Kate & Anna McGarrigle
+80 x
+
+== 4.2 | Power-pop 1972-73
+id: power-pop
+name: Pop de los setenta y power-pop
+fam: pop
+years: 1972-1981
+place: Suecia / EE UU
+from: british-invasion, folk-rock
+desc: Abba, campeones del pop de los setenta, de las armonías efervescentes a la pista de baile y el melodrama romántico. Alex Chilton (Box Tops, Big Star) es el profeta del power-pop: melodía pura, armonías a cuatro voces, guitarras jingle-jangle y riffs de hard rock (Radio City); su ideología retro impregnará la new wave y el brit-pop de los noventa. Raspberries.
+fix:
+81-88 Abba
+90 Box Tops
+92 Big Star
+
+== 4.3
+id: songwriters-70s
+name: Cantautores de los setenta
+fam: folk
+years: 1970-1983
+place: EE UU / Reino Unido
+from: solo-60s, greenwich, country-rock
+desc: James Taylor se convierte, misteriosamente, en el prototipo del cantautor de los setenta; Carole King, Carly Simon y Don McLean, sobrevalorados. Las innovaciones llegan del oeste: Randy Newman y sus viñetas urbanas con fusión de estilos populares, Shawn Phillips, J.J. Cale y su estilo «laid-back», Gram Parsons, Emmylou Harris, Roger McGuinn, Jackson Browne (Late For The Sky) y, sobre todo, Tom Waits, discípulo de Beefheart y cronista de marginados (Swordfishtrombones, Rain Dogs). Excéntricos como Todd Rundgren y Annette Peacock; en Gran Bretaña, Peter Hammill, Anthony Moore, Richard Thompson, Robert Calvert, John Cale, Kevin Coyne, Elton John y los ex Beatles. El realismo de Bruce Springsteen, verdadero heredero de Woody Guthrie y del blues, y la escuela italiana de cantautores (De André, Guccini, Battisti, Sorrenti).
+fix:
+2 Carly Simon
+3 Don McLean
+4 John Prine
+5 John Denver
+9 Randy Newman
+10 Harry Nilsson
+11-13 Shawn Phillips
+16-17 Gram Parsons
+18 Emmylou Harris
+24 Jackson Browne
+25-27 Tom Waits
+41-42 Annette Peacock
+48-51 Pete Townshend
+60-64 Richard Thompson
+67-69 John Cale
+70 Lou Reed & John Cale
+71 John Cale & Brian Eno
+72 John Cale & Bob Neuwirth
+74-76 George Harrison
+77-82 Elton John
+83 Bruce Springsteen
+84-85 Bruce Springsteen
+88 Bob Dylan
+89-90 Jim Croce
+91-97 Billy Joel
+98 Fabrizio De Andre
+99 Francesco Guccini
+100 Alan Sorrenti
+
+== 4.4
+id: glam
+name: Decadencia y glam-rock
+fam: punk
+years: 1969-1977
+place: Londres / Nueva York
+from: velvet, detroit, british-psych, hard-rock
+desc: El rock siempre tuvo un elemento de decadencia, amoralidad y obscenidad; entre los Cockettes (1968) y el Rocky Horror Picture Show (1974) se convierte en producto de masas. Gran Bretaña lo llama glam-rock: T.Rex lo inaugura y lo casa con el hard rock; David Bowie lo lleva a su cima comercial convirtiendo el marketing en arte (Ziggy Stardust, la trilogía berlinesa con Eno). En EE UU, Alice Cooper, Sparks, Iggy Pop y Lou Reed (Berlin, Metal Machine Music, New York). El glam y la decadencia preparan el punk: Mott The Hoople, Be Bop Deluxe, New York Dolls, Heartbreakers, Dictators, Modern Lovers de Jonathan Richman, Runaways.
+fix:
+1 T.Rex
+2 T.Rex
+3-8 David Bowie
+9-12 Alice Cooper
+15 David Bowie
+17 Lou Reed
+22 Lou Reed & John Cale
+23 Lou Reed
+24 Mott The Hoople
+25 Be Bop Deluxe
+27 Heartbreakers
+28 Dictators
+29 Modern Lovers
+30 Simply Saucer
+31 Runaways
+
+== 4.4 | Heavy metal 1972-76
+id: heavy-metal-70s
+name: Heavy metal de los setenta
+fam: hard
+years: 1972-1980
+place: EE UU / Australia
+from: hard-rock, glam
+desc: «Born To Be Wild» de Steppenwolf acuña la expresión «heavy metal», que pasa a designar en EE UU el hard rock. Blue Oyster Cult definen el nuevo género (satanismo y serie B envueltos en riffs crudos); Aerosmith lo enlazan con el rhythm'n'blues depravado de Stones y Stooges; Kiss abrazan todos los estereotipos; AC/DC, las tripas del rock'n'roll (Back In Black); Journey y Boston, arquetipos del pop-metal; Rush reinventan el power-trio.
+fix:
+33 Blue Oyster Cult
+41-46 AC/DC
+48 Boston
+49-50 Rush
+
+== 4.5
+id: eno-ambient
+name: Eno y la frontera: meta-pop y ambient
+fam: vanguardia
+years: 1974-1985
+place: Reino Unido
+from: prog-rock, krautrock, minimalism, electronic-rock
+desc: En la segunda mitad de los setenta Brian Eno, Larry Fast, Mickey Hart o Stomu Yamashta difuminan la frontera entre rock y vanguardia. Eno cambia el rumbo del rock al menos tres veces: inventa el meta-pop (Taking Tiger Mountain, Before And After Science), propone abolir la composición en favor del «sonido» (Discreet Music) y, tras colaborar con Cluster, alumbra la música ambient (Music For Airports), además de ser uno de los productores más influyentes. Synergy, Patrick Moraz, Go, Mickey Hart y la world music de percusión, Peter Blegvad.
+fix:
+1-2 Brian Eno
+5-7 Brian Eno
+8-10 Synergy
+11 Patrick Moraz
+12 Go
+13 Diga Rhythm Band
+14 Mickey Hart, Henry Wolff & Nancy Hennings
+15-18 Mickey Hart
+
+== 4.5 | Techno-rock 1973-76
+id: studio-pop
+name: Techno-rock y pop de estudio
+fam: pop
+years: 1973-1989
+place: Reino Unido / EE UU
+from: prog-rock, power-pop, symphonic-rock
+desc: El «sonido» por encima de la melodía, el ritmo y la armonía: Electric Light Orchestra inventa el «high-tech pop»; Supertramp, Alan Parsons Project, Kansas, Styx y Split Enz. El valor de la producción define a Steely Dan (el pop-jazz pulido de los yuppies), Hall & Oates, los Fleetwood Mac de Rumours y Tusk, Toto, el «muro de sonido» titánico de Jim Steinman (Bat Out Of Hell) y la Penguin Cafe Orchestra. A finales de los setenta, el art-rock culmina en los supergrupos: 10cc, Godley & Creme, Foreigner, UK, Asia, Sky.
+fix:
+21-25 Electric Light Orchestra
+28 Supertramp
+29 Beatles
+30 Pink Floyd
+31-33 Alan Parsons Project
+34 Kansas
+36 Styx
+38-43 Split Enz
+
+== 4.5 | The value of production 1973-78
+id: studio-pop
+fix:
+47-48 Steely Dan
+49-52 Hall & Oates
+53-55 Daryl Hall
+56-57 Fleetwood Mac
+61 Bonnie Tyler
+62 Jim Steinman
+63 Pandora's Box
+64 Penguin Cafe Orchestra
+65-67 Penguin Cafe Orchestra
+
+== 4.5 | Prog-rock 1974-80
+id: prog-late
+name: Progresivo tardío y cámara-rock
+fam: prog
+years: 1974-1986
+place: Reino Unido / Francia / Bélgica
+from: canterbury, prog-rock, euro-prog
+desc: El sonido de Canterbury sobrevive mutando en easy-listening y jazz-rock (Camel, Brand X, Bill Bruford). Los países francófonos son una fuente inagotable: el rock para guitarra y sintetizador de Heldon de Richard Pinhas, Clearlight de Cyrille Verdeaux, la electrónica bailable de Jean-Michel Jarre (Oxygene), y la música de cámara oscura de Univers Zero (Heatwave) y Art Zoyd, herederos de Henry Cow y Magma, junto a Aqsaq Maboul y Hector Zazou.
+fix:
+68-69 Camel
+70-71 Brand X
+78-80 Heldon
+81-83 Cyrille Verdeaux
+92-95 Art Zoyd
+96 Aqsaq Maboul
+97 Hector Zazou
+
+== 4.5 | Supergroups 1975-80
+id: studio-pop
+fix:
+98 10cc
+99 Godley & Creme
+100 Foreigner
+101-102 UK
+103 Asia
+104-105 Sky
+
+== 4.6
+id: auteurs
+name: Los autores (1975-1990)
+fam: folk
+years: 1975-1990
+place: EE UU / Reino Unido
+from: songwriters-70s, solo-60s
+desc: La emancipación definitiva de la mujer en el rock (Terry Garthwaite, Joan Armatrading, Nanci Griffith y, sobre todo, Rickie Lee Jones, protegida de Tom Waits); la escuela tejana de cantautores herederos de Townes Van Zandt (Guy Clark, Butch Hancock, Joe Ely, Terry Allen, Rodney Crowell, T-Bone Burnett); el populismo melancólico de la posguerra de Vietnam (Warren Zevon, Rick Danko, Steve Forbert, John Hiatt, John Mellencamp, Don Henley, Donald Fagen, Robbie Robertson); y el puente de 1977 hacia la new wave: Peter Gabriel, poeta atormentado de las neurosis postindustriales, Marianne Faithfull y Kate Bush.
+fix:
+0 Terry Garthwaite
+2-3 Nanci Griffith
+4 Rickie Lee Jones
+14 T-Bone Burnett
+17 Rick Danko
+18 Steve Forbert
+19 Willie Nile
+23-28 John Mellencamp
+29 Don Henley
+32-34 Huey Lewis
+35-36 Bryan Adams
+44-45 Kate Bush
+
+== 4.7
+id: funk
+name: Funk
+fam: negra
+years: 1965-1981
+place: EE UU
+from: soul
+desc: Los cimientos los ponen en los sesenta James Brown, los MG's, Sly & The Family Stone y los Meters (polirritmo sincopado, bajo «groovy», guitarra metálica, falsete), pero el funk se convierte en género con Kool & The Gang, Earth Wind & Fire, Ohio Players y K.C. & The Sunshine Band. El artista más creativo es George Clinton, cuyos Parliament y Funkadelic adoptan el ethos contracultural, la sátira freak y una mezcla de jazz, Hendrix, psicodelia, porno, terror y ciencia ficción: el Frank Zappa del funk. August Darnell (Dr Buzzard's Original Savannah Band, Kid Creole) es otro visionario zappiano.
+fix:
+6 Dr Buzzard's Original Savannah Band
+7 Kid Creole & The Coconuts
+
+== 4.7 | Disco-music 1974-78
+id: disco
+name: Música disco
+fam: negra
+years: 1972-1985
+place: Nueva York / Múnich
+from: funk, soul, krautrock
+desc: El funk abre la puerta a la subcultura disco: los gays de Nueva York, perseguidos, crean sus islas sociales en clubes privados y recuperan la despersonalización del éxtasis colectivo. Tres hechos la impulsan: el soul orquestal de Barry White, «Autobahn» de Kraftwerk y el Polymoog. Manu Dibango («Soul Makossa») y MFSB la inventan; Giorgio Moroder casa la música robótica de Kraftwerk con el soul (Donna Summer, «I Feel Love», nacimiento del synth-pop). Van McCoy, el maxi de 12" de Walter Gibbons, Chic, Grace Jones, Gloria Gaynor, Saturday Night Fever, el Warehouse de Frankie Knuckles y el Paradise Garage de Larry Levan. Los reyes del pop: Michael Jackson (Thriller, «el mayor farol de todos los tiempos») y Prince, su contrapartida intelectual.
+fix:
+9 Manu Dibango
+10 MFSB
+11-12 Donna Summer
+13 Giorgio Moroder
+16 Chic
+17 Grace Jones
+18-19 Gloria Gaynor
+20 Thelma Houston
+23-25 Pointer Sisters
+
+== 4.7 | The kings of pop 1975-79
+id: disco
+fix:
+29-30 Prince
+32 Sinead O'Connor
+
+== 4.8
+id: minimalism
+fix:
+0-4 Pauline Oliveros
+5-9 Harold Budd
+12-15 Wim Mertens
+16-17 Michael Nyman
+18-20 John Adams
+21-22 Daniel Lentz
+23-24 Glenn Branca
+25-29 Meredith Monk
+30-33 Joan La Barbara
+34 Laurie Anderson
+35-40 Diamanda Galas
+
+== 5.1
+id: ny-new-wave
+name: New wave neoyorquina
+fam: punk
+years: 1975-1982
+place: Nueva York
+from: velvet, glam, detroit
+desc: 1976 es un año bisagra: los sellos independientes revitalizan la industria y nuevos géneros la escena, una revolución comparable a la de 1966. Los jóvenes de los setenta, sin sueños tras la derrota de la contracultura, canalizan su aburrimiento en un sonido crudo emparentado con el garage. Nueva York es la capital: el CBGB's y el Max's Kansas City. Patti Smith, Richard Hell (el profeta: «Blank Generation» y la ética punk), Television (Marquee Moon, que define la estética de la new wave), Tom Verlaine, y los Ramones, que tocan rock'n'roll inepto a velocidad supersónica e inventan el género más importante del último cuarto de siglo.
+fix:
+0-2 Patti Smith
+3 Richard Hell & the Voidoids
+7-8 Television
+9-11 Richard Lloyd
+16 Ramones
+
+== 5.1 | No wave
+id: no-wave
+name: No wave
+fam: punk
+years: 1977-1984
+place: Nueva York
+from: ny-new-wave, freaks, minimalism
+desc: El cénit artístico y nadir emocional de la new wave: la recopilación No New York de Brian Eno documenta una generación «negativa». Teenage Jesus And The Jerks, DNA y Mars tocan música esquizofrénica, paranoica y claustrofóbica con la furia del punk y habilidades «subhumanas»: la reacción definitiva contra la canción. Lydia Lunch convierte la primitiva antimúsica en arte de autora (Queen Of Siam, «The Agony Is The Ecstasy»); Mars, el muro de ruido definitivo; DNA, la náusea; los Theoretical Girls de Glenn Branca. La no wave muestra el subconsciente de la new wave.
+fix:
+24 Varios
+25-31 Lydia Lunch
+32 Lydia Lunch & Lucy Hamilton
+33 Lydia Lunch & Kim Gordon
+34 Lydia Lunch & Rowland Howard
+
+== 5.2
+id: punk-uk
+name: Punk-rock británico
+fam: punk
+years: 1976-1984
+place: Londres
+from: ny-new-wave, detroit, glam
+desc: La gira de los Ramones de 1976 contagia a Inglaterra, donde el punk es combinación de moda y paro: la Gran Bretaña de Thatcher, con las ciudades industriales devastadas, convierte el «punk» en algo mucho más serio que lo que pretendían los Ramones. Malcolm McLaren inventa el sonido (Sex Pistols, «los Ramones con heroína y valium») y la imagen. The Clash, los más intelectuales (London Calling, Sandinista); Damned, Generation X, Buzzcocks (inventores del punk-pop), Vibrators. En Australia, Radio Birdman y los Saints. La segunda ola (GBH, UK Subs, Neurotics, New Model Army, Stiff Little Fingers) y el punk anarquista (Crass, Discharge, Rudimentari Peni, Subhumans).
+fix:
+0-2 Sex Pistols
+10 Clash
+11 Damned
+12 Damned
+13 Generation X
+14-15 Buzzcocks
+17-18 Radio Birdman
+19-20 Saints
+50 Rudimentari Peni
+51 Subhumans
+
+== 5.2 | Art-punk
+id: art-punk
+name: Art-punk y funk-punk británico
+fam: punk
+years: 1977-1988
+place: Reino Unido / Australia
+from: punk-uk, prog-rock, funk, reggae
+desc: Las bandas artísticas del primer punk: Wire (de Pink Flag a la desolación electrónica de 154), Colin Newman, The Fall de Mark E. Smith, los anárquicos Swell Maps, los Mekons, las Slits (primera banda punk femenina) y los australianos Birthday Party de Nick Cave. Muchos punks redescubren la esencia «salvaje» del jazz y el funk: Pop Group (Y, fusión catastrófica de primitivismo y futurismo con dub, funk y agit-prop), Rip Rig & Panic, Gang Of Four, A Certain Ratio y Wolfgang Press.
+fix:
+23 Wire
+24 Colin Newman
+25-26 Fall
+27-28 Fall
+30-31 Mekons
+32 Slits
+36 Pop Group
+38-39 Rip Rig & Panic
+41 A Certain Ratio
+
+== 5.2 | Funk-punk fission
+id: art-punk
+
+== 5.2 | Punk never dies
+id: punk-uk
+
+== 5.2 | Anarchists
+id: punk-uk
+
+== 5.3
+id: blank-generation
+name: La blank generation (Akron, San Francisco, Manhattan)
+fam: punk
+years: 1974-1988
+place: Ohio / San Francisco / Nueva York
+from: velvet, detroit, freaks, krautrock, ny-new-wave
+desc: La «blank generation» nace de un vacío moral: la sociedad posindustrial reduce al individuo a un engranaje y la humanidad imagina su mutación en monstruos. La música de la new wave es una de las formas más filosóficas del rock. En Akron (Ohio), Pere Ubu (Modern Dance, «fresco de una civilización al borde del colapso» y folk para la era industrial), Devo, Styrenes, Waitresses, Dead Boys. En San Francisco, el tercer polo: los Residents (Meet The Residents, Not Available, Eskimo), Chrome (space-rock e implosiones industriales), Tuxedomoon, Factrix, Zoogz Rift, Rhythm And Noise, Negativland y Biota. En Manhattan, Suicide (sintetizador y voz; inventan el «psychobilly») y los Feelies.
+fix:
+1-3 Pere Ubu
+6 Pere Ubu
+12 Dead Boys
+17-19 Residents
+20-21 Chrome
+29-33 Zoogz Rift
+35-36 Rhythm And Noise
+38 Norman Salant
+41 Ophelias
+45-46 Negativland
+47 Suicide
+48 Suicide
+49 Alan Vega
+
+== 5.4
+id: american-graffiti
+name: American Graffiti: revival, garage y power-pop
+fam: pop
+years: 1976-1989
+place: EE UU
+from: rocknroll, british-invasion, power-pop, ny-new-wave
+desc: American Graffiti (1973) desata el revival de los cincuenta y sesenta, que suenan más auténticos que el rock corporativo de los setenta: rockabilly, surf, folk-rock, psicodelia, bandas sonoras de terror. Los punks descubren el alma malvada del rockabilly: Suicide inventa el psychobilly y los Cramps el «voodoobilly»; Fleshtones, Raybeats, Stray Cats, Von Lmo. El garage revive con Slickee Boys, Pretenders, Wipers, Real Kids; el power-pop con Cheap Trick, Shoes, Cars, Jonathan Richman y Embarrassment. En California, los Blasters y el cow-punk de Rank And File; Tom Petty como teórico del power-pop, Plimsouls, Redd Kross, Go-Go's, Bangles. El blues para la generación punk: George Thorogood, Fabulous Thunderbirds, J. Geils Band, Dixie Dregs.
+fix:
+0 x
+9 Raybeats
+10 Jody Harris & Robert Quine
+13 Slickee Boys
+15 Wipers
+16 Real Kids
+17-18 Shoes
+19 Cars
+21 Embarrassment
+22-23 Blasters
+24 Rank And File
+26-29 Tom Petty
+31 Redd Kross
+36 Dixie Dregs
+
+== 5.5
+id: pub-rock
+name: British Graffiti: pub-rock y mods
+fam: pop
+years: 1976-1986
+place: Reino Unido
+from: punk-uk, american-graffiti, british-invasion
+desc: Gran Bretaña tenía los pubs: el renacimiento nace de los músicos que tocaban rhythm'n'blues y rockabilly en ellos, y el punk les saca de allí. Surge un nuevo cantautor, anclado en las raíces y consciente de lo social: Dave Edmunds, Nick Lowe, Graham Parker, Joe Jackson, Elvis Costello (el «joven airado» de la new wave, quizá sobrevalorado), Tom Robinson, Ian Dury, Wreckless Eric. Dire Straits; el revival mod de los Jam y los Television Personalities; los Soft Boys de Robyn Hitchcock, cimiento del revival psicodélico; Boomtown Rats, Undertones, Bananarama.
+fix:
+1 Graham Parker
+2 Joe Jackson
+11-14 Dire Straits
+15 Jam
+17 Soft Boys
+
+== 5.5 | Ska and reggae 1977-79
+id: reggae
+fix:
+18-25 Police
+
+== 5.5 | Modernism 1976-80
+id: uk-modernism
+name: Modernismo británico: de Ultravox a U2
+fam: pop
+years: 1977-1987
+place: Reino Unido / Irlanda
+from: pub-rock, studio-pop, krautrock, glam
+desc: Los puentes entre punk y pop sofisticado: Ultravox funde punk, el pop robótico de Kraftwerk y Roxy Music (Vienna, uno de los discos que alumbran el synth-pop); XTC perfeccionan el arte de la canción pop como nadie (Drums And Wires, English Settlement, Skylarking); Magazine, Monochrome Set, Squeeze; Japan y su dance-pop decadente; Simple Minds; y U2, el fenómeno más sensacional de las islas desde los Beatles, que unen la vehemencia del punk con el atractivo masivo del pop.
+fix:
+26 Ultravox
+31-40 XTC
+41-43 Squeeze
+44-46 Japan
+47-52 Simple Minds
+53 U2
+
+== 5.6
+id: dance-punk
+name: Música de baile para punks
+fam: negra
+years: 1976-1990
+place: Nueva York
+from: disco, ny-new-wave, funk, no-wave
+desc: La disco y el punk florecen a la vez y acaban fusionándose, pese a representar valores casi opuestos. Blondie define la fusión de hedonismo disco y estética punk; Madonna es el híbrido definitivo y redefine la balada de rhythm'n'blues para la era de los ritmos electrónicos. Las mujeres llevan la actitud punk a las discotecas. Talking Heads asimilan el funk en la canción new wave y, con Eno, llegan a la fusión de futurismo y primitivismo de Remain In Light; Byrne y Eno firman My Life In The Bush Of Ghosts. ESG, Liquid Liquid, Defunkt, Bush Tetras, los Contortions de James Chance (Albert Ayler + Beefheart + James Brown), la Love Of Life Orchestra de Peter Gordon, Suburbs, Was Not Was, Wall Of Voodoo.
+fix:
+0-4 Blondie
+5-15 Madonna
+18-19 Talking Heads
+20 David Byrne & Brian Eno
+22 James Chance & the Contortions
+23 James White
+24 James Chance
+29 Was Not Was
+30 Martha & The Muffins
+32 Voice Farm
+33-34 Wall Of Voodoo
+
+== 5.7
+id: dark-punk
+name: Dark punk y rock gótico
+fam: dark
+years: 1978-1990
+place: Reino Unido
+from: punk-uk, glam, velvet, krautrock, reggae
+desc: El punk británico estuvo flanqueado desde el principio por un movimiento «gótico» que canalizaba su violencia hacia atmósferas de terror y rituales esotéricos: Stranglers, Siouxsie, X-Ray Spex. Lo más interesante evita el tono de película de terror: The Cure introducen la angustia existencial de Camus y Sartre (Pornography, Disintegration); Joy Division mezclan Doors, Kraftwerk y Black Sabbath y su final anuncia el synth-pop; Bauhaus, Killing Joke, Psychedelic Furs, los irlandeses Virgin Prunes y la cima del género, Public Image Ltd de Johnny Lydon, que convierte el punk en música de cámara con dub y ecos étnicos (Second Edition, Flowers Of Romance). Después, el gótico bailable de Sisters Of Mercy, Alien Sex Fiend, Cult, Mission e In The Nursery.
+fix:
+0 Siouxsie & the Banshees
+4 Cure
+8 Joy Division
+13-15 Killing Joke
+17 Psychedelic Furs
+20-22 Public Image Ltd
+23-24 Sisters Of Mercy
+26-28 Cult
+29-33 In The Nursery
+33 x
+35 Cassandra Complex
+
+== 5.8
+id: industrial
+name: Música industrial
+fam: dark
+years: 1977-1992
+place: Sheffield / Londres
+from: krautrock, minimalism, blank-generation, eno-ambient, punk-uk
+desc: El término lo usa por primera vez Monte Cazazza, pero su significado se define en Sheffield: Throbbing Gristle y Cabaret Voltaire usan el ruido de la fábrica como metáfora de la condición humana a finales del siglo XX. Throbbing Gristle (Second Annual Report, «música de la fábrica de la muerte»; 20 Jazz Funk Greats abre la puerta al industrial bailable y al synth-pop), Cabaret Voltaire, Clock DVA. Con los sellos independientes, la diversificación: Nurse With Wound, Zoviet France, This Heat, 23 Skidoo, Current 93 (y su folk apocalíptico), Hafler Trio, Coil, Psychic TV, Test Dept, Lustmord. Desde Australia, Foetus, el primer compositor «clásico» de la civilización punk (Hole, Nail, Thaw). En EE UU, Arcane Device y Controlled Bleeding.
+fix:
+0-7 Throbbing Gristle
+5 Brian Eno
+6 Ron Geesin
+8-11 Cabaret Voltaire
+12-15 Clock DVA
+16-21 Nurse With Wound
+22-25 Zoviet France
+26 This Heat
+31-33 Current 93
+38 Test Dept
+41 Foetus
+42 Foetus
+43-45 Steroid Maximus
+46 Foetus
+72 Arcane Device
+73-76 Controlled Bleeding
+77 Skin Chamber
+
+== 5.8 | Electronic Body Music 1980-84
+id: ebm
+name: Electronic Body Music
+fam: dark
+years: 1980-1990
+place: Bélgica / Vancouver
+from: industrial, disco
+desc: Bélgica acuña una de las corrientes de baile industrial más exitosas, la «electronic body music», derivada del último Cabaret Voltaire con influencia disco y de ciencia ficción: Geography de Front 242 es el disco hito; después Klinik, Neon Judgement, Vomito Negro. En Vancouver, Skinny Puppy y Front Line Assembly, profetas de la generación cyberpunk. Los cimientos de la música de baile alternativa de los noventa.
+fix:
+47 Front 242
+48 Skinny Puppy
+50 Skinny Puppy
+
+== 5.8 | German experimental music 1981-84
+id: german-noise
+name: Experimental alemán: Einstürzende Neubauten
+fam: dark
+years: 1979-1993
+place: Berlín / Düsseldorf
+from: industrial, krautrock, punk-uk
+desc: En Alemania, ruido y anarquía más allá del industrial, entre la estética punk y el expresionismo: Der Plan, Die Krupps, P16D4, Die Haut, HNAS y, sobre todo, Einstürzende Neubauten, teatro vivo de la autodestrucción con objetos encontrados y cadencias industriales (Kollaps, Zeichnungen des Patienten OT), más cercanos a Beckett que a Chuck Berry. DAF, Palais Schaumburg y Xmal Deutschland llevan el synth-pop hacia el baile industrial; Malaria, Yello, Die Form (Francia), Maurizio Bianchi (Italia) y Esplendor Geométrico (España).
+fix:
+52 Der Plan
+53 Die Krupps
+54 P16D4
+55 Die Haut
+56 HNAS
+57 Einsturzende Neubauten
+64 Deutsch Amerikanische Freundschaft
+65 Palais Schaumburg
+66 Xmal Deutschland
+68 Yello
+70 Maurizio Bianchi
+71 Esplendor Geometrico
+
+== 5.8 | USA
+id: industrial
+
+== 5.9
+id: hardcore
+name: Hardcore
+fam: punk
+years: 1977-1990
+place: EE UU
+from: ny-new-wave, punk-uk, detroit
+desc: El punk como «violento, rápido y ruidoso» tarda en conquistar EE UU, pero cuando lo hace el hardcore se convierte durante dos décadas en el idioma nacional de millones de chavales. Misfits y el «scum-rock»; el crossover punk-metal (Suicidal Tendencies, Corrosion Of Conformity, Agnostic Front); Mission Of Burma en Boston. Washington: Bad Brains (reggae, funk y metal diez años por delante), Minor Threat (el «straight-edge») y Rites Of Spring, inventores del emo-core. San Francisco: Dead Kennedys de Jello Biafra, D.R.I. (thrash antes que Metallica), Flipper. Los «beach punks» de Los Ángeles: Germs, X, Black Flag (Damaged), Descendents, Gun Club (Fire Of Love), Bad Religion. El jazz-core de Minutemen y Saccharine Trust; en el Medio Oeste, Husker Du y Replacements cambian el hardcore para siempre; en Chicago, Naked Raygun y Big Black de Steve Albini; en Europa, The Ex y los italianos CCCP.
+fix:
+1 Them
+2 Doors
+3 Suicidal Tendencies
+4 Corrosion Of Conformity
+6 Samhain
+9 Gang Green
+12 Bad Brains
+17 No Trend
+21-22 Nuns
+23 Sleepers
+24 Dead Kennedys
+25-27 Dead Kennedys
+29 Poison Idea
+31 Flipper
+36-37 X
+43 Dickies
+44 Varios
+46 Gun Club
+49 Gun Club
+51 Social Distortion
+59 fIREHOSE
+60-61 Saccharine Trust
+62-63 Universal Congress Of
+64-65 NoMeansNo
+69 Effigies
+70 Zero Boys
+71 Negative Approach
+79-80 Replacements
+86-89 Big Black
+92 Shellac
+93-96 Ex
+97-99 Dog Faced Hermans
+
+== 5.9 | Gothic hardcore 1980-81
+id: dark-punk
+
+== 5.10
+id: college-pop
+name: College-pop y nacimiento del lo-fi
+fam: pop
+years: 1979-1995
+place: Athens / Carolina del Norte / Boston
+from: folk-rock, american-graffiti, ny-new-wave
+desc: La población universitaria del Sur adopta la ética de la new wave y la adapta a la melodía: un pop inusualmente intelectual, con raíces en el folk-rock y el country-rock pero contaminado por las neurosis de la época. Athens (Georgia) compite con las capitales del rock: B-52's y R.E.M., uno de los grupos de más éxito de la historia. Carolina del Norte (dB's, Windbreakers), Hoboken (Smithereens, Bongos, Tiny Lights), el nacimiento del lo-fi (Half Japanese, Violent Femmes, Beat Happening, Guided By Voices, Sebadoh), They Might Be Giants, Green, B.A.L.L., Boston (Volcano Suns, 10,000 Maniacs, Throwing Muses, Blake Babies), la Costa Oeste (Game Theory, Posies, Young Fresh Fellows) y la sátira de Ween.
+fix:
+0 B-52's
+1-15 R.E.M.
+20-21 Beach Boys
+21 Beatles
+22-23 Windbreakers
+25-28 Smithereens
+33-36 Tiny Lights
+38-39 Half Japanese
+41-42 Violent Femmes
+43-44 Beat Happening
+46 Dub Narcotic Sound System
+47-50 Guided By Voices
+51-52 Sebadoh
+53 They Might Be Giants
+54-55 They Might Be Giants
+57-58 Green
+59 Velvet Monkeys
+62-63 Gumball
+64 Sussman Lawrence
+65 Dangtrippers
+66-67 Dumptruck
+69 Volcano Suns
+70 Til Tuesday
+71-75 10,000 Maniacs
+76 Throwing Muses
+78-79 Blake Babies
+80 Pianosaurus
+81 Game Theory
+82 Toad The Wet Sprocket
+85-87 Young Fresh Fellows
+88 Minus 5
+89 Meat Loaf
+90-92 Pandora's Box
+93 Bonnie Tyler
+94 Air Supply
+95-96 Jim Steinman
+98 Ween
+99 Frogs
+
+== 5.11
+id: synth-pop
+name: Synth-pop y new romantics
+fam: pop
+years: 1979-1990
+place: Reino Unido
+from: krautrock, disco, uk-modernism, eno-ambient, dark-punk
+desc: Todo empieza con los instrumentos electrónicos, el futurismo melódico de Eno y los ritmos robóticos de Kraftwerk: el synth-pop es quizá el acontecimiento más importante de la música melódica desde el Mersey-beat. The Buggles («Video Killed The Radio Star»), Gary Numan, Yellow Magic Orchestra, OMD, Depeche Mode, Human League; con Soft Cell llega el diluvio y el dúo de teclista y cantante se impone (Eurythmics, Yazoo, Erasure, Pet Shop Boys). Flying Lizards y New Order («Blue Monday»). Los nuevos ídolos adolescentes, los new romantics: Duran Duran, Culture Club, Thompson Twins, Tears For Fears, ABC, Heaven 17.
+fix:
+0 Buggles
+1-2 Gary Numan
+4-6 Orchestral Manoeuvres In The Dark
+7 Depeche Mode
+8-9 Human League
+10-11 Eurythmics
+12-13 Erasure
+14-16 Pet Shop Boys
+20-21 New Order
+22-26 Duran Duran
+27-28 Culture Club
+
+== 5.11 | The prodromes of Lo-fi Pop 1980-83
+id: uk-guitar-pop
+name: Pop británico de los ochenta
+fam: pop
+years: 1979-1994
+place: Reino Unido
+from: synth-pop, pub-rock, college-pop, velvet
+desc: Junto al synth-pop, otros grupos trabajan la atmósfera y acuñan un estilo apagado y melódico que revisa el concepto de pop: Young Marble Giants y Raincoats (proto lo-fi), Felt, Talk Talk (Spirit Of Eden, pionero del slo-core). El revival pop (Everything But The Girl, Sade, Scritti Politti, Prefab Sprout, Style Council, Simply Red); Escocia (Orange Juice, Josef K, Aztec Camera, Blue Nile, el «anorak pop» de los Vaselines) e Irlanda; en Inglaterra, los Smiths (el antídoto del punk, como los Beatles lo fueron del rock'n'roll), Wedding Present, Woodentops, Primitives, Waterboys, Big Audio Dynamite; Roxette y los Sugarcubes de Björk.
+fix:
+30-31 Raincoats
+32-33 Raincoats
+34-39 Felt
+41 Van Morrison
+42 Robert Wyatt
+43 Talk Talk
+44 Blue Nile
+46 Microdisney
+54 Smiths
+62-65 Woodentops
+66-68 Primitives
+69 Field Mice
+70 Waterboys
+71 All About Eve
+74 Big Audio Dynamite
+75 Roxette
+76 Sugarcubes
+
+== 5.11 | Pop revival 1981-84
+id: uk-guitar-pop
+
+== 5.11 | Scotland and Ireland 1979-86
+id: uk-guitar-pop
+
+== 5.11 | England 1979-88
+id: uk-guitar-pop
+
+== 5.11 | International pop 1981-88
+id: uk-guitar-pop
+
+== 5.11 | Australia and New Zealand 1978-1986
+id: antipodes-pop
+name: Pop de Australia y Nueva Zelanda
+fam: pop
+years: 1978-1998
+place: Australia / Nueva Zelanda
+from: uk-guitar-pop, velvet, folk-rock
+desc: Australia aporta las elegías neorrománticas de los Go-Betweens, las microsinfonías de The Church, Hunters And Collectors, Midnight Oil, Men At Work, Triffids e INXS. Nueva Zelanda cría una generación de antihéroes que no tiene nada que ver con la ola británica comercial y crea el género de los noventa: el «lo-fi pop». The Clean (como si los Buzzcocks versionaran a Syd Barrett y a la Velvet), Tall Dwarfs, Chills, Bats, This Kind Of Punishment, Jean Paul Sartre Experience, Scorched Earth Policy, Able Tasmans, Verlaines y la figura de Peter Jefferies.
+fix:
+77 Go-Betweens
+86 Men At Work
+87-89 INXS
+90-95 Clean
+96-100 Tall Dwarfs
+102-104 Chills
+106 Chills
+110 This Kind Of Punishment
+111 Jean Paul Sartre Experience
+112-113 Scorched Earth Policy
+121 Peter Green
+
+== 5.12
+id: neo-prog
+name: Neo-progresivo
+fam: prog
+years: 1977-1997
+place: Nueva York / Washington / Boston / Japón
+from: canterbury, no-wave, prog-late, jazz-rock
+desc: El impulso experimental de la new wave trae de vuelta el progresivo, con más acento jazz y nacido del ambiente no wave. En Nueva York, los Lounge Lizards de John Lurie («fake jazz»), Bill Laswell (Material, Massacre, Praxis, Axiom), los Golden Palominos de Anton Fier, Arto Lindsay y Ambitious Lovers, Scene Is Now, Dr Nerve, Mofungo, Ordinaires, Chuck Vrtacek. En Washington, Happy The Man y los Muffins, los mejores progresivos de su tiempo; en Boston, Birdsongs Of The Mesozoic; en el Oeste, Cartoon, PFS, Thinking Plague, U Totem, Adrian Belew, Michael Shrieve y Djam Karet. En Japón, After Dinner, YBO2, High Rise y Ruins; en Alemania, Caspar Brötzmann Massaker; en Inglaterra, Marillion y Ozric Tentacles; en Quebec, Jean Derome, René Lussier y Miriodor.
+fix:
+2 Material
+3 Material
+4 Massacre
+5-6 Bill Laswell
+7 Bill Laswell
+9-11 Praxis
+17 Bill Laswell
+19 Bill Laswell
+20 Golden Palominos
+25-27 Golden Palominos
+28-29 Ambitious Lovers
+30-32 Arto Lindsay
+33 However
+34 V-Effect
+36 Scene Is Now
+39-40 Dr Nerve
+52-53 Forever Einstein
+55-57 Muffins
+58 Idiot Savant
+59 Orthotonics
+60 Birdsongs Of The Mesozoic
+62-63 Birdsongs Of The Mesozoic
+65 Roger Miller
+68 Thinking Plague
+69 5uu's
+70 Motor Totemist Guild
+72 Adrian Belew
+77 Michael Shrieve
+85 White Heaven
+87 Ruins
+89-90 Caspar Brötzmann Massaker
+91 Marillion
+92 Ozric Tentacles
+94-95 Ozric Tentacles
+96 Magic Mushroom Band
+99 Rene Lussier
+100-101 Miriodor
+
+== 5.12 | British sound painters, 1980-83
+id: sound-painters
+name: Pintores de sonido británicos
+fam: vanguardia
+years: 1980-2002
+place: Reino Unido / Japón
+from: eno-ambient, dark-punk, uk-modernism
+desc: Veteranos de la new wave que convierten el rock en pintura sonora: Jah Wobble (de los dub sinfónicos de PiL al «Bedroom Album», precursor del lo-fi, y la fusión étnica y dub), Durutti Column y su guitarra impresionista, Bill Nelson, Ryuichi Sakamoto, David Sylvian (la «balada ambient exótica» de Brilliant Trees y Gone To Earth, con Jon Hassell, Holger Czukay y Mark Isham) y Virginia Astley.
+fix:
+102-104 Jah Wobble
+104 Jah Wobble & Invaders Of The Heart
+111-112 Solaris
+113-114 Jah Wobble
+116-117 Bill Nelson
+122 David Sylvian
+123-125 David Sylvian
+126 Van Morrison
+127 Robert Wyatt
+128-130 David Sylvian
+
+== 5.13
+id: minimal-rock
+name: Minimal-rock: Sonic Youth y Swans
+fam: punk
+years: 1980-1998
+place: Nueva York
+from: no-wave, minimalism, velvet, dark-punk
+desc: La new wave abre las puertas a músicos que se mezclan con artistas de performance, cineastas y compositores de vanguardia como Philip Glass, Elliott Sharp, Glenn Branca o Laurie Anderson. Philip Glass inspira a Polyrock; Glenn Branca es mentor de Y Pants y de Sonic Youth, que marcan a la vez el final de la new wave y el principio de la era que se construye sobre sus innovaciones (Bad Moon Rising, Sister, Daydream Nation). Un ánimo deprimido, sin ideales: Dark Day, Live Skull, UT y los Swans de Michael Gira, banda sonora de suicidios masivos (Filth, Cop) que se transfigura con Jarboe en música religiosa (Children Of God, Soundtracks For The Blind).
+fix:
+1 Y Pants
+4-5 Sonic Youth
+6 Sonic Youth
+11-19 Sonic Youth
+20 Live Skull
+21 UT
+23-24 Swans
+25-32 Swans
+
+== 5.14
+id: psych-revival
+name: Revival psicodélico y garage de los ochenta
+fam: psico
+years: 1982-1996
+place: Los Ángeles / EE UU / Australia / Reino Unido
+from: acid-rock, american-graffiti, ny-new-wave, british-psych
+desc: El revival más persistente de los ochenta y noventa. En Los Ángeles, el «Paisley Underground»: Rain Parade, Three O'Clock, Dream Syndicate (síntesis de Dylan y la Velvet), Savage Republic, True West, Opal. En la Costa Este, los imitadores fetichistas (Lyres, Fuzztones, Chesterfield Kings) y bandas creativas (Das Damen, Plasticland, Eleventh Dream Day). El garage más crudo: Honeymoon Killers, Gibson Bros, Gories, Original Sins, God Bullies, Pandoras. La psicodelia libre de jams: Crystallized Movements, Magic Hour, Vocokesh, Sun City Girls, Black Sun Ensemble, Helios Creed. En Australia, Celibate Rifles, Died Pretty, Hoodoo Gurus, Beasts Of Bourbon, Scientists, Feedtime, Crime And The City Solution; en Europa, Hanoi Rocks, Echo & The Bunnymen, Teardrop Explodes, Bevis Frond, Legendary Pink Dots, The The y Love And Rockets.
+fix:
+0 Rain Parade
+1 Three O'Clock
+3 Dream Syndicate
+4-6 Dream Syndicate
+12 Droogs
+15 Yard Trauma
+16 Steppes
+18 Kendra Smith
+19 Drowning Pool
+20 Shiva Burlesque
+21-22 Lyres
+23 Plan 9
+24 A Certain General
+25 Fuzztones
+26 Chesterfield Kings
+27 Vipers
+30-32 Plasticland
+33-38 Eleventh Dream Day
+39 27 Various
+40-44 Honeymoon Killers
+45 Workdogs
+46 Elvis Hitler
+47 Men & Volts
+48 Miracle Workers
+49 Cynics
+50 Dogmatics
+51-52 Gibson Bros
+53 Bassholes
+54 Cheater Slicks
+56 Blacktop
+57 Dirtbombs
+59-62 Original Sins
+63-64 God Bullies
+65 Pandoras
+94 Vermonster
+95 BORB
+96-98 Magic Hour
+99 F/I
+100-101 Vocokesh
+105 Sun City Girls
+111-112 Helios Creed
+115-116 Hoodoo Gurus
+117 Beasts Of Bourbon
+118-121 Scientists
+122-123 Feedtime
+129-131 Hanoi Rocks
+132 Nomads
+133 Union Carbide Productions
+134-137 Echo & The Bunnymen
+138 Teardrop Explodes
+139-140 Bevis Frond
+141-146 Legendary Pink Dots
+147-150 The The
+151-155 Love And Rockets
+156 Pink Floyd
+157-158 Love And Rockets
+
+== 5.14 | Desert psychedelia 1982-88
+id: desert-psych
+name: Psicodelia del desierto
+fam: psico
+years: 1982-2001
+place: Arizona / Texas
+from: psych-revival, hardcore, country-rock, acid-rock
+desc: Del desierto de Arizona surge un sonido country-psicodélico: los Meat Puppets tienden un puente entre hardcore y acid-rock y se convierten en herederos de los Grateful Dead con su «cosmic cow-punk» (Up On The Sun); Green On Red, híbrido de garage, new wave y Paisley Underground; Giant Sand de Howe Gelb y su fusión de rock, country y psicodelia. En Texas, el punk hiperpsicodélico demente de los Butthole Surfers (Psychic Powerless), una de las grandes bandas de los ochenta.
+fix:
+67-70 Meat Puppets
+72 Green On Red
+74-78 Giant Sand
+82 Butthole Surfers
+84 Butthole Surfers
+90 P
+
+== 5.14 | Free-form psychedelia 1982-88
+id: psych-revival
+
+== 5.14 | Australian psychedelia 1981-86
+id: psych-revival
+
+== 5.14 | Euro-garage 1980-86
+id: psych-revival
+
+== 5.14 | Euro-psychedelia 1980-86
+id: psych-revival
+
+== 5.14 | Prodromes of dance-psychedelia 1982-85
+id: psych-revival
+
+== 5.14 | Dream-pop 1982-87
+id: dream-pop
+name: Dream-pop
+fam: psico
+years: 1982-1996
+place: Reino Unido / Noruega
+from: dark-punk, psych-revival, spiritual
+desc: Los Cocteau Twins dan otra vuelta a la psicodelia: melodías sublimes en la voz etérea de Elizabeth Fraser, envueltas en capas oníricas de guitarra y teclado de Robin Guthrie (Head Over Heels, Treasure). Ivo Watts-Russell (4AD) y This Mortal Coil; Dead Can Dance, que trasladan la exótica mística de Third Ear Band, Popol Vuh y Clannad a la era del dream-pop (Spleen And Ideal); los noruegos Bel Canto y A R Kane, pioneros del trip-hop.
+fix:
+169 Dead Can Dance
+172-175 Dead Can Dance
+177-178 Bel Canto
+179 Bel Canto
+180 A R Kane
+
+== 5.14 | Feedback-pop 1985-87
+id: shoegaze
+name: Feedback-pop y shoegazing
+fam: psico
+years: 1985-1992
+place: Escocia / Irlanda / Inglaterra
+from: velvet, psych-revival, dream-pop, minimal-rock
+desc: Jesus And Mary Chain acuñan el «feedback-pop»: «White Light White Heat» de la Velvet más una melodía pegadiza, o el muro de sonido de Spector con una capa de ruido de guitarra (Psychocandy). My Bloody Valentine crean algo mágico: el «shoegazing» de Kevin Shields, éxtasis y terror como dos caras de la misma luna; Loveless es la exploración definitiva de las texturas en el rock y demuestra la equivalencia entre «ruidoso» y «sinfónico». Spacemen 3 convierten el ruido sostenido en meditación zen; Loop pintan paisajes de drones.
+fix:
+181 Velvet Underground
+182-185 Jesus And Mary Chain
+188 My Bloody Valentine
+191 Spacemen 3
+192 Loop
+
+== 5.14 | Shoegazing 1986-87
+id: shoegaze
+
+== 5.15
+id: metal-80s
+name: La edad de oro del heavy metal
+fam: hard
+years: 1976-1991
+place: Reino Unido / EE UU / Europa
+from: heavy-metal-70s, hard-rock, punk-uk
+desc: El heavy metal renace en los mismos años que la new wave, aprovechando los sellos independientes: Motörhead (puente entre metal, Stooges/MC5 y punk), Judas Priest, Iron Maiden, Diamond Head, Def Leppard y, en EE UU, Van Halen. Entre 1982 y 1985 el subgénero gótico se convierte en «black metal» (Venom, Mercyful Fate, Celtic Frost, Helloween, Bathory). El pop-metal y el shock-rock (Twisted Sister, Mötley Crüe, Joan Jett, Bon Jovi, Savatage); la pompa y el doom (Manowar, Voivod, Saint Vitus, Pentagram); el metal progresivo (Living Colour, Queensrÿche, King's X, Pantera, Joe Satriani) y el «street sound» de Los Ángeles (Guns N' Roses, Jane's Addiction, Faster Pussycat).
+fix:
+0-4 Motorhead
+6 Judas Priest
+7-9 Iron Maiden
+17 Venom
+21-22 Twisted Sister
+23-26 Motley Crue
+27 Joan Jett
+28-36 Bon Jovi
+37 Savatage
+38 Manowar
+44 Saint Vitus
+45 Pentagram
+97 Sanctuary
+98 House Of Lords
+99 Fates Warning
+100 King's X
+101 Pantera
+109-110 Faster Pussycat
+
+== 5.15 | Speed-metal 1983-85
+id: thrash
+name: Speed y thrash metal
+fam: hard
+years: 1983-1996
+place: Los Ángeles / San Francisco / Nueva York / Brasil
+from: metal-80s, hardcore
+desc: La escena «street» de Los Ángeles cruza el hardcore (Bad Brains, Black Flag) con el glam-metal. A partir de una intuición de D.R.I., Metallica inventan el speed-metal: del thrash de Kill 'Em All a la elegancia casi clásica de Master Of Puppets. Megadeth, Slayer (puente entre el black metal de Venom y el death metal), Exciter, la escena de San Francisco (Death Angel, Exodus, Testament), Anthrax y White Zombie en Nueva York, y Sepultura, que lo convierten en lenguaje universal (Roots).
+fix:
+47-51 Metallica
+52-54 Metallica
+61 Slayer
+63 Death Angel
+64 Exodus
+65 Vicious Rumour
+66 Testament
+71-73 White Zombie
+
+== 5.15 | Grindcore 1986-88
+id: extreme-metal
+name: Grindcore y death metal
+fam: hard
+years: 1985-1991
+place: Reino Unido / Florida
+from: thrash, punk-uk, hardcore
+desc: Bajo la presión del hardcore el ritmo del metal se acelera sin fin: Nuclear Assault inventa el «grindcore», que en Gran Bretaña sigue la estela de Crass y Discharge: Napalm Death (Scum, From Enslavement To Obliteration), Carcass, Bolt Thrower. A la vez, el black metal muta en «death metal» (Slayer + Helloween + Napalm Death): Possessed acuña el término y Florida es su cuna (Death, Deicide, Morbid Angel, Obituary), con los barrocos Sadus en San Francisco.
+fix:
+79-80 Nuclear Assault
+81-82 Napalm Death
+88 Possessed
+90 Death
+91 Deicide
+94 Sadus
+
+== 5.15 | Death-metal 1987-89
+id: extreme-metal
+
+== 5.15 | Funk-metal 1984-86
+id: funk-metal
+name: Funk-metal
+fam: hard
+years: 1984-2000
+place: Los Ángeles / San Francisco
+from: funk, hardcore, metal-80s
+desc: Una de las grandes ideas de fusión de los ochenta: integrar los ritmos y voces brutales del funk y el rap con el metal de guitarras. Los Red Hot Chili Peppers descubren lo que tenían en común George Clinton y Jello Biafra; Fishbone y su fusión satírica de funk, ska y soul; Faith No More, híbrido inventivo de punk, funk, progresivo, hip hop y metal (Introduce Yourself, Angel Dust); Victim's Family.
+fix:
+112-116 Red Hot Chili Peppers
+117-119 Fishbone
+120-123 Faith No More
+124 Victim's Family
+
+== 5.15 | Grunge 1985-86
+id: grunge
+name: Grunge
+fam: hard
+years: 1985-1996
+place: Seattle
+from: hard-rock, hardcore, metal-80s, minimal-rock
+desc: El hard rock vuelve a lo grande en Seattle, con un estilo psicodélico y duro que será uno de los acontecimientos más sensacionales de los noventa. Green River lo inauguran (Come On Down); Skin Yard, Screaming Trees, los Melvins (que redescubren el stoner exagerando los grooves de Blue Cheer y Black Sabbath), Mother Love Bone y Pearl Jam (Ten), Mudhoney (garage), Soundgarden (el riff como tótem, Superunknown) y Nirvana, que inyectan dosis anormales de emoción y melodía: Nevermind es el manifiesto de una época y su sonido, la banda sonora de la crisis nerviosa de una generación.
+fix:
+126-127 Green River
+128 Skin Yard
+129-131 Screaming Trees
+132-141 Melvins
+142 Mother Love Bone
+152 Soundgarden
+153 Temple Of The Dog
+157-158 Nirvana
+
+== 5.16
+id: songwriters-80s
+name: Cantautores de los ochenta
+fam: folk
+years: 1981-2003
+place: EE UU / Canadá / Reino Unido / Australia
+from: auteurs, songwriters-70s, ny-new-wave, punk-uk
+desc: Absorbida la new wave, el mundo de los cantautores no vuelve a ser el mismo: los referentes pasan a ser Dylan, Neil Young, Cohen, Tim Buckley y Joni Mitchell. Las mujeres recuperan su estatus de seres filosóficos: Phranc, Suzanne Vega, Tracy Chapman, Melissa Etheridge, Michelle Shocked, Barbara Manning, Lucinda y Victoria Williams, Indigo Girls y, en Canadá, Jane Siberry, Mary Margaret O'Hara y Sarah McLachlan. Excéntricos: Jandek, Daniel Johnston, David Thomas, Alejandro Escovedo; en California, Stan Ridgway, Chris Isaak y Smog. En Gran Bretaña, Billy Bragg, Robyn Hitchcock, Julian Cope y, la voz más importante de la década, Nick Cave, predicador del apocalipsis moral (From Her To Eternity, The Good Son). Sinéad O'Connor, Sting, Morrissey, Momus; el pop celta de Enya y Loreena McKennitt; al cambiar la década, Joe Henry, Daniel Lanois y Bob Mould.
+fix:
+3-5 Suzanne Vega
+6 Tracy Chapman
+7-8 Melissa Etheridge
+9 Cindy Lee Berryhill
+10 Toni Childs
+11 Sam Phillips
+12-17 Michelle Shocked
+20 Barbara Manning
+21-22 Lucinda Williams
+24-25 Victoria Williams
+26 Indigo Girls
+29-31 Jane Siberry
+32 Jane Siberry
+34-35 Sarah McLachlan
+38-43 Daniel Johnston
+44 Daniel Johnston
+45-49 David Thomas
+53 Dave Alvin
+54-55 Chris Isaak
+61-63 Smog
+65 Carmaig DeForest
+66 Marshall Crenshaw
+67-71 Matthew Sweet
+72 Ben Vaughn
+73 Paul Roland
+74 Marc Almond
+75 John Foxx
+76 Gavin Friday
+77 Edwyn Collins
+78-80 Billy Idol
+82 Billy Bragg
+84 Soft Boys
+86-87 Robyn Hitchcock
+90-95 Julian Cope
+97-105 Nick Cave
+106 Tracey Ullman
+111 Peter Gabriel
+112 Paul Simon
+114-115 Morrissey
+116-118 Momus
+119-120 Sinead O'Connor
+122 Enya
+131 James McMurtry
+133-134 Paul K
+135 Joe Henry
+136-140 Joe Henry
+144-145 Bob Mould
+146 Sugar
+147 Bob Mould
+
+== 5.16 | Celtic pop, 1985-87
+id: celtic
+
+== 5.17
+id: roots-80s
+name: Roots-rock de los ochenta y cow-punk
+fam: raices
+years: 1984-1995
+place: EE UU
+from: american-graffiti, hardcore, country-rock, psych-revival
+desc: Como en 1970 tras 1966, la new wave de 1976 va seguida de un revival del roots-rock, esta vez gradual y disfrazado: punks que desfiguran los estilos tradicionales (X, Dream Syndicate, Gun Club) y los «cow-punks» que tocan country ambientado entre inadaptados: Long Ryders, Jason & The Scorchers, Fetchin Bones, Lone Justice, Beat Farmers. El populismo de Los Lobos, Del Fuegos, Del-Lords y Walkabouts; en la Costa Oeste, los dementes Camper Van Beethoven, Donner Party, Catheads, Thin White Rope y los American Music Club de Mark Eitzel; en Texas, Wild Seeds, Poi Dog Pondering, Glass Eye; en los Grandes Lagos, BoDeans, Soul Asylum, Afghan Whigs, Shrimp Boat y los canadienses Cowboy Junkies. Nashville se renueva con los neotradicionalistas (George Strait, Randy Travis, Garth Brooks, Lyle Lovett, Steve Earle, Dwight Yoakam) y el surf instrumental vuelve con Shadowy Men On A Shadowy Planet.
+fix:
+0 Long Ryders
+1 Jason & The Scorchers
+2 Dash Rip Rock
+3 Drivin' N' Cryin'
+4-6 Fetchin Bones
+13 Concrete Blonde
+14 Great Plains
+16 Los Lobos
+19 Pontiac Brothers
+20 Del Fuegos
+21 Treat Her Right
+22-23 Del-Lords
+24 Bruce Springsteen
+25 Tom Petty
+26-27 Del-Lords
+28-29 Absolute Grey
+30 Silos
+34 Camper Van Beethoven
+35-36 Camper Van Beethoven
+37-38 Camper Van Beethoven
+39-40 Donner Party
+41-42 Catheads
+43 It Thing
+49-53 American Music Club
+62-66 American Music Club
+67 Timbuk 3
+68 Wild Seeds
+69 Poi Dog Pondering
+70 Texas Instruments
+71 Glass Eye
+73 BoDeans
+74 EIEIO
+76-79 Soul Asylum
+80-83 Afghan Whigs
+84 Shrimp Boat
+98 George Strait
+103 Jim Lauderdale
+111-115 Shadowy Men On A Shadowy Planet
+
+== 5.17 | Alt-country 1988-89
+id: alt-country
+name: Alt-country
+fam: raices
+years: 1988-2000
+place: Chicago / Medio Oeste / Texas
+from: roots-80s, country-rock, hardcore
+desc: El country de Nashville trasladado a los dormitorios de la juventud desencantada de los pueblos del interior. Souled American (Fe, un guiso lunático de country, blues, jazz, reggae y zydeco a tempos letárgicos), Uncle Tupelo (No Depression: baladas country tocadas con la furia del hardcore, el origen de un movimiento), los Jayhawks y Vulgar Boatmen siembran el fenómeno «alt-country» de los noventa.
+fix:
+93 Jayhawks
+95-96 Jayhawks
+
+== 5.17 | Nashville, 1982-89
+id: roots-80s
+
+== 5.17 | Instrumental roots, 1985-88
+id: roots-80s
+
+== 5.18
+id: hip-hop
+name: Rap y hip hop
+fam: negra
+years: 1975-2000
+place: Nueva York / Los Ángeles
+from: funk, reggae, disco, krautrock
+desc: A finales de los ochenta el «rockero» es una figura tan obsoleta como lo fue el cantante pop en 1956: tres revoluciones toman la música popular (el DJ como fuerza creativa, el hip hop y la fusión ciberpunk de industrial, metal y hardcore). En 1975 Kool Herc reinventa el breakbeat en el Bronx; el rap es una evolución del dub jamaicano. Sugar Hill Gang, Kurtis Blow, los «mensajes» de Grandmaster Flash, Afrika Bambaataa (el Leonardo del beatbox, inventor del «electro»), el tocadiscos como instrumento, Run-DMC, Tackhead, L.L. Cool J, Eric B & Rakim y Public Enemy (It Takes A Nation Of Millions, la obra maestra del hip hop). El gangsta rap (Schoolly D, NWA, Ice Cube, Dr Dre, 2Pac), Beastie Boys, las raperas (MC Lyte, Queen Latifah), De La Soul, A Tribe Called Quest, Cypress Hill; en Gran Bretaña, Art Of Noise.
+fix:
+4 Afrika Bambaataa
+5 Grandmaster Flash
+11 Herbie Hancock
+12-14 Run-DMC
+15-16 Mark Stewart
+19 Tackhead
+23 Eric B. & Rakim
+25-26 Public Enemy
+33-34 Schoolly D
+35 NWA
+36 Ice Cube
+37 Dr Dre
+40 3rd Bass
+43 Salt'N Pepa
+46 Disposable Heroes Of Hiphoprisy
+50 A Tribe Called Quest
+54-56 Cypress Hill
+57 Guy
+
+== 5.18 | Techno 1984-88
+id: techno
+name: Techno de Detroit
+fam: negra
+years: 1981-1999
+place: Detroit
+from: krautrock, funk, disco, synth-pop
+desc: El techno sale de Detroit casi sin que nadie lo note, pero Juan Atkins, Derrick May, Kevin Saunderson y Carl Craig cambiarán las discotecas del mundo. Atkins acuña el término para el funk de alta tecnología de Cybotron y quiere casar el funk abstracto de Parliament con el synth-pop robótico de Kraftwerk (Model 500, «No UFO's»); Saunderson lanza el boom de 1988 con Inner City; May («el Miles Davis del techno») firma «Strings Of Life»; Carl Craig lo lleva lejos de la pista (Landcruising).
+fix:
+61-63 Cybotron
+64 Model 500
+65 Juan Atkins
+67 Inner City
+72 Carl Craig
+
+== 5.18 | House
+id: house
+name: House y acid house
+fam: negra
+years: 1984-1990
+place: Chicago / Nueva York / Ibiza / Manchester
+from: disco, techno, synth-pop
+desc: Evolución natural de la disco, nacida en dos clubes históricos, el Warehouse de Chicago (Frankie Knuckles) y el Paradise Garage de Nueva York (Larry Levan): música de baile electrónica con cajas de ritmos y voces soul. Jesse Saunders, Frankie Knuckles, el acid house de Phuture y DJ Pierre con la TB-303, Farley Jackmaster Funk, Steve Hurley, Marshall Jefferson, Todd Terry. Europa lo convierte en histeria colectiva: Ibiza, el éxtasis, Paul Oakenfold, la Hacienda y el «verano del amor» de 1988; M/A/R/R/S, Technotronic y la Love Parade de Berlín.
+fix:
+74 Jesse Saunders
+76 Walter Gibbons
+79 Farley Jackmaster Funk
+84-86 Todd Terry
+87 M/A/R/R/S
+
+== 5.18 | Industrial dance
+id: ebm
+fix:
+89-90 Meat Beat Manifesto
+
+== 5.18 | Madchester
+id: madchester
+name: Madchester y ambient house
+fam: negra
+years: 1988-2000
+place: Manchester / Reino Unido
+from: house, psych-revival, shoegaze
+desc: Un movimiento de Manchester que marca la música de baile como ningún otro de los ochenta: la fusión de psicodelia, techno y pop. KLF importa el acid house; los Stone Roses mezclan ritmos disco hipnóticos, melodías pegadizas y entusiasmo sesentero; los Happy Mondays de Shaun Ryder (Bummed) y Black Grape; Charlatans, Nitzer Ebb, Shamen, Pop Will Eat Itself, Jesus Jones. Más allá de la moda, 808 State (herederos de Kraftwerk, «Pacific State»), William Orbit, Richard Kirk, A Guy Called Gerald, el collage de Coldcut y Primal Scream (Screamadelica).
+fix:
+93-96 Stone Roses
+97-99 Happy Mondays
+101 Charlatans
+108-110 808 State
+113 Sandoz
+114 Electronic Eye
+115 Richard Kirk
+116 A Guy Called Gerald
+118 DJ Food
+120 Primal Scream
+
+== 5.19
+id: new-age
+name: New age y world music
+fam: vanguardia
+years: 1975-2001
+place: California / Europa / Japón
+from: american-primitive, kosmische, spiritual, eno-ambient, minimalism
+desc: En 1975 William Ackerman acuña el término y funda Windham Hill: la new age nace como reacción al rock (silenciosa, melódica, adulta, sin voz, batería ni guitarra eléctrica) y es sobre todo una síntesis de culturas, estados de ánimo, géneros y estilos de vida. Sus parientes: el jazz estético de ECM, John Fahey, el minimalismo y la kosmische musik. Guitarra (Ackerman, Michael Hedges), piano (George Winston, Michael Jones), flauta (Paul Horn), arpa, cuerdas (David Darling) y percusión; conjuntos de cámara (Shadowfax, Turtle Island String Quartet); la electrónica de Los Ángeles (Michael Stearns, Kevin Braheny, Steve Roach, el más metafísico de los mensajeros cósmicos) y la sinfónica (Constance Demby, Novus Magnificat), Robert Rich. La world music de vanguardia: Jon Hassell (Dream Theory In Malaya), Paul Winter, Kitaro, Jeff Greinke, Mark Isham, Michael Brook, Forrest Fang, Jorge Reyes. En Alemania, Peter Frohmader y los herederos de la música cósmica.
+fix:
+0 Terry Riley
+1 Mystic Moods Orchestra
+2 Tony Scott
+3 Ravi Shankar & Yehudi Menuhin
+8 George Winston
+12 Michael Jones
+15-19 David Lanz
+18 Michael Gettel
+19 Wayne Gratz
+22 Paul Horn
+24 Georgia Kelly
+25 Daniel Kobialka
+26-27 David Darling
+28 Henry Wolff & Nancy Hennings
+32 Shadowfax
+33-34 Montreux
+35 Turtle Island String Quartet
+36 Teja Bell, Dallas Smith & Jon Bernoff
+42 Michael Stearns
+46-49 Steve Roach
+49 Steve Roach & Robert Rich
+50 Steve Roach
+51 Suspended Memories
+52 Steve Roach & Vidna Obmana
+53-55 Steve Roach
+60 James Asher
+65 Suzanne Ciani
+67 Tim Story
+75 Brian Eno
+76-84 Robert Rich
+90 Paul Winter
+91-92 Kitaro
+93 Do'Ah
+108 Forrest Fang
+110 Jorge Reyes
+112 David Parsons
+114-115 Carlos Nakai & Peter Kater
+124 Software
+
+== 5.20
+id: space-pop
+name: Space-pop
+fam: psico
+years: 1986-2000
+place: EE UU
+from: psych-revival, shoegaze, velvet, british-psych
+desc: Tras la orgía de distorsión del dream-pop y el shoegazing, en EE UU se busca disciplina: Mark Kramer (Shockabilly, B.A.L.L., Bongwater, el coloso The Guilt Trip); los Flaming Lips, los discípulos más locos de Pink Floyd, entre la ética punk y el burlesque hippy (Oh My Gawd, Zaireeka); Red Temple Spirits, Viv Akauldren. Galaxie 500 y Yo La Tengo, los grupos que más influirán en la década siguiente: la psicodelia como estupor exangüe (Today, On Fire) y las baladas abstractas de texturas (May I Sing With Me). Y Phish, indiferentes a la estética punk, recuperan el directo, el solo de guitarra y la improvisación colectiva.
+fix:
+0 Shockabilly
+1 Kramer, Ralph Carney & Daved Hild
+4 Bongwater
+5-6 Kramer
+7 Who
+9-17 Flaming Lips
+19 Pink Floyd
+20 Doors
+21 Velvet Underground
+23 Viv Akauldren
+25 Pink Floyd
+26 Television
+27 Galaxie 500
+29 Damon & Naomi
+31-37 Yo La Tengo
+40-41 Phish
+
+== 5.21
+id: extreme-hardcore
+name: Hardcore extremo
+fam: punk
+years: 1984-1995
+place: Grandes Lagos / Australia
+from: hardcore, detroit
+desc: El hardcore más salvaje y ruidoso de finales de los ochenta sale de los Grandes Lagos, donde el legado de MC5 y Stooges seguía vivo: Die Kreuzen, Killdozer, los Laughing Hyenas de John Brannon (You Can't Pray A Lie, «teatro del horror, el miedo y el odio»), los Cows de Minneapolis (payasos y delincuentes a la vez), Lazy Cowgirls, Death Of Samantha y Cobra Verde, Phantom 309, Scrawl. En Australia, King Snake Roost y los Lubricated Goat de Stu Spasm.
+fix:
+1 Die Kreuzen
+4-5 Laughing Hyenas
+6 Laughing Hyenas
+7-8 Cows
+13 Cows
+14 Lazy Cowgirls
+17 Death Of Samantha
+20 13 Nightmares
+21-22 Scrawl
+23 Fifth Column
+24-25 King Snake Roost
+26-29 Lubricated Goat
+30 Crunt
+
+== 5.22
+id: industrial-metal
+name: Metal industrial y post-industrial
+fam: dark
+years: 1986-1999
+place: Chicago / EE UU / Europa
+from: industrial, ebm, thrash, hardcore
+desc: Uno de los logros clave de finales de los ochenta: la fusión de música industrial con hard rock y heavy metal, iniciada por los suizos Young Gods (samples de guitarras metálicas) y KMFDM. Chicago la completa: Ministry de Al Jourgensen (The Land Of Rape And Honey, «Jesus Built My Hot Rod»), Revolting Cocks, Pigface de Martin Atkins y, de ahí, Nine Inch Nails de Trent Reznor, que cambia el destino del industrial (Pretty Hate Machine, The Downward Spiral). El post-industrial: Neurosis, Steel Pole Bath Tub, Cop Shoot Cop, Missing Foundation, Pain Teens, Godflesh de Justin Broadrick, y los proyectos de Jello Biafra (Lard, Tumor Circus).
+fix:
+0 Young Gods
+4 KMFDM
+8-9 Ministry
+10 Pigface
+11-13 Nine Inch Nails
+14-15 Angkor Wat
+21-22 Steel Pole Bath Tub
+26-27 Cop Shoot Cop
+28-29 Missing Foundation
+35 Pain Teens
+36-38 Godflesh
+39 Lou Reed
+42 Tumor Circus
+
+== 5.22 | Post-industrial music
+id: industrial-metal
+
+== 5.22 | Apocalyptic Folk
+id: apocalyptic-folk
+name: Folk apocalíptico y escuela eslovena
+fam: dark
+years: 1984-1994
+place: Reino Unido / Eslovenia
+from: industrial, dark-punk
+desc: Liderados por Current 93 de David Tibet, músicos que dejan el industrial por un folk nuevo, igual de ominoso y deprimido: el lied clásico en versión industrial. Death In June (Brown Book) y Sol Invictus; en Eslovenia, la escuela expresionista entre Nico, In The Nursery, la música medieval y el industrial (Laibach, Autopsia, Borghesia); en Holanda, Trespassers W.
+fix:
+46 Trespassers W
+
+== 5.23
+id: punk-crossover
+name: Cruces del punk: de Fugazi al punk-pop
+fam: punk
+years: 1986-1997
+place: EE UU / Reino Unido / Japón
+from: hardcore, extreme-hardcore, minimal-rock
+desc: A finales de los ochenta el punk es el más vivo de los subgéneros del rock: miles de bandas ensayando en garajes, un lenguaje universal como no se veía desde los sesenta. Nueva York: Adrenalin O.D., el straight-edge de Youth Of Today y Gorilla Biscuits, el crossover punk-metal (Cro-Mags, Prong, Danzig). Washington lanza a Pussy Galore (la irrelevancia hecha relevante), Unrest y Fugazi de Ian MacKaye, que abstrae el hardcore en una forma teatral de compromiso ético y estético (Repeater, Steady Diet Of Nothing, Red Medicine), y Royal Trux (Twin Infinitives, «un Trout Mask Replica para la generación grunge»). El punk-pop de Mr T Experience, Dwarves, Henry Rollins, L7 (pioneras del «foxcore»), Lemonheads, Screeching Weasel, Goo Goo Dolls, Fastbacks, Shonen Knife; el «rogue folk» de los Pogues, Membranes y Chumbawamba.
+fix:
+0 Adrenalin O.D.
+1 Youth Of Today
+2 Gorilla Biscuits
+8 Danzig
+10-11 Pussy Galore
+16-17 Unrest
+25 Royal Trux
+27 Captain Beefheart
+30-31 Mr T Experience
+34-36 Rollins Band
+37 Rollins Band
+38 Rollins Band
+39-42 L7
+43-44 Lemonheads
+45 Moving Targets
+46-47 Screeching Weasel
+49 Creamers
+50 Sex Clark Five
+53-54 Fastbacks
+61-63 Chumbawamba
+
+== 5.23 | Rogue folk 1985-86
+id: punk-crossover
+
+== 5.24
+id: noise-rock
+name: Noise-rock y noise-pop
+fam: punk
+years: 1985-1996
+place: Nueva York / Boston / Kentucky / San Francisco
+from: minimal-rock, hardcore, punk-crossover
+desc: Sonic Youth acuñan el «noise-rock»: aún obedece las reglas del rock'n'roll, pero secuestrado por sonidos disonantes. En Nueva York, Rat At Rat R, Agitpop, Ritual Tension, Gut Bank, la triple guitarra de Band Of Susans, Of Cabbages And Kings, Spongehead, Alice Donut. Boston da los grupos más influyentes de la década siguiente: Dinosaur Jr (el estándar «noise-pop», fusión de distorsión y melodía, eslabón entre Sonic Youth y el grunge) y los Pixies (Surfer Rosa, Doolittle). El art-punk del Sur (Antietam, Squirrel Bait, Blind Idiot God, Alter Natives) y los excéntricos de San Francisco (Tragic Mulatto, Slovenly).
+fix:
+0 Rat At Rat R
+4-8 Band Of Susans
+12-13 Of Cabbages And Kings
+14-17 Spongehead
+18-22 Dinosaur Jr
+23-27 Pixies
+30 Blind Idiot God
+34 Phantom Tollbooth
+39-42 Slovenly
+
+== 5.24 | Dream-pop 1987-89
+id: dream-pop
+fix:
+44 Hugo Largo
+45-46 Blackgirls
+
+== 6.1
+id: noise-90s
+name: Más ruidoso que el rock: noise-rock de los noventa
+fam: punk
+years: 1989-1998
+place: Nueva York / Chicago / Carolina del Norte / Reino Unido
+from: noise-rock, minimal-rock, punk-crossover, hardcore
+desc: En los noventa los géneros de los ochenta (lo-fi, industrial, gótico, roots-rock, noise-rock, indie-pop, techno, ambient) se separan en lugar de fundirse: es la revancha de «la provincia» (el Sur, Seattle) y la década con menos géneros nuevos (grunge, post-rock, trip-hop, drum'n'bass, glitch). La influencia de Sonic Youth y Pussy Galore es la más visible: Bewitched, Boss Hog, Jon Spencer Blues Explosion (deconstrucción posmoderna del blues), Versus. El hardcore apocalíptico de Chicago: Jesus Lizard (Goat), Dazzling Killmen, Unsane. Polvo y la escuela de Chapel Hill, Come, Supreme Dicks, Tsunami, Brainiac; en Inglaterra, Gallon Drunk, Jacob's Mouse, Prolapse; en Canadá, la escuela de Halifax (Eric's Trip, Sloan, Jale).
+fix:
+0 Bewitched
+2 Boss Hog
+8 Babe The Blue Ox
+9 St Johnny
+10 Bunny Brains
+12 Lotion
+13-15 Jesus Lizard
+19-20 Dazzling Killmen
+23 Season To Risk
+24 Distorted Pony
+25 Slug
+27 Cell
+29 Polara
+31-34 Polvo
+35 Come
+38 Latimer
+40 Pitchblende
+41-43 Brainiac
+44 Pineal Ventana
+46 Gallon Drunk
+48 Faith Healers
+50 Boyracer
+51 Rosa Mota
+55 18th Dye
+
+== 6.2
+id: prog-90s
+name: Sonidos progresivos de los noventa
+fam: prog
+years: 1990-2002
+place: EE UU / Europa / Japón
+from: neo-prog, space-pop, canterbury, freaks
+desc: Phish devuelven el rock alternativo a la radio y legitiman el regreso a la estética progresiva, sobre todo en la Costa Este: Blues Traveler, Motherhead Bug y Sulfur, Spin Doctors, Klezmatics, Cul De Sac (Ecim, China Gate) y Run On. El noise-punk-jazz de God Is My Co-pilot, Molecules, Love Child, Blowhole, Harry Pussy. Virginia como epicentro (Echolyn, Boud Deun, Rake, Dave Matthews Band). Solistas: Marc Ribot, Nicky Skopelitis, Buckethead, Loren Mazzacane, los zappianos Ant-Bee y Mike Keneally, Gary Lucas, Alan Licht, Bob Drake. En la Costa Oeste, Primus (Frizzle Fry), Mr Bungle, Amy Denio, Caveman Shoestore, Thessalonians. Internacional: Philharmonie, Xaal, Volapuk, Kevin Martin (God, Techno Animal, Ice, Bug). Y la Babel final: Bright, Meringue, Cerberus Shoal, Tin Hat Trio, Species Being.
+fix:
+0 Blues Traveler
+3 Spin Doctors
+5-6 Cul De Sac
+7-8 Run On
+9 Sue Garner & Rick Brown
+11 Molecules
+12 Love Child
+13 Spiny Anteaters
+14 Outhouse
+15 Blowhole
+16 Harry Pussy
+17-18 Echolyn
+19 Boud Deun
+23 Dave Matthews Band
+24-27 Marc Ribot
+30-31 Buckethead
+31 Death Cube K
+32 Buckethead
+34 Loren Mazzacane
+41 Gary Lucas
+42-44 Alan Licht
+45 Tony Levin
+48 Bob Drake
+49-52 Primus
+53 Mr Bungle
+54 Tone Dogs
+55-56 Amy Denio
+59 Philharmonie
+60 Xaal
+61 Volapuk
+63 In The Labyrinth
+64 Happy Family
+65-66 God
+67 Techno Animal
+68-69 Ice
+71 Bug
+73 Meringue
+75 Witch Hazel
+76-81 Cerberus Shoal
+78 Grateful Dead
+82 Tin Hat Trio
+83 Species Being
+
+== 6.3
+id: post-psych
+name: Post-psicodelia (EE UU)
+fam: psico
+years: 1990-2001
+place: EE UU
+from: space-pop, psych-revival, shoegaze, acid-rock
+desc: La psicodelia, el mayor invento de los sesenta, sigue siendo el género dominante en los noventa, con los mismos estilos básicos (el pop psicodélico de los Doors, el freak-out de Red Crayola, el trance de la Velvet, la jam de los Grateful Dead) más el dream-pop y el shoegazing. Mercury Rev logran una síntesis de proporciones históricas (Yerself Is Steam, Deserter's Songs); Luna, Motion Picture, Arson Garden, Tadpoles, Uncle Wiggly, Brother J.T., Space Needle. En la Costa Oeste, Medicine, Sky Cries Mary, Brian Jonestown Massacre (enciclopedias psicodélicas), Quasi, Dandy Warhols.
+fix:
+4 Luna
+8 Uncle Wiggly
+17 Medicine
+20 Sky Cries Mary
+21-26 Brian Jonestown Massacre
+27 Quasi
+30 Dandy Warhols
+
+== 6.3 | American shoegazing 1992-96
+id: shoegaze
+fix:
+33-34 Lilys
+35 Swirlies
+36 Catherine
+37 Saturnine 60
+38 Lenola
+39 Seely
+40-41 Bowery Electric
+42 Shallow
+43 Flowchart
+
+== 6.3 | Beyond space-rock 1992-95
+id: space-rock-90s
+name: Space-rock y psicodelia extrema de los noventa
+fam: psico
+years: 1991-2002
+place: EE UU / Nueva Zelanda / Japón
+from: psych-revival, psych-madness, kosmische, shoegaze
+desc: Fundiendo los estilos psicodélicos que preferían la jam libre (acid-rock, space-rock, raga-rock), muchos grupos esculpen empresas sonoras épicas: Fuzzhead, Crawlspace, Pressurehed, Farflung, Fuxa, Gravitar (el Metal Machine Music de Lou Reed con ritmo), Pelt, Primordial Undermind, Escapade y, por encima de todos, Bardo Pond (Bufo Alvarius, Amanita) y Hash Jar Tempo. Texas recupera la supremacía de la locura psicodélica (Ed Hall, Cherubs, ST 37, Mike Gunn, Charalambides, Linus Pauling Quartet, la Vas Deferens Organization de Dallas); San Francisco, la psicodelia ruidosa de Mason Jones (Trance, Subarachnoid Space). En Nueva Zelanda, Roy Montgomery (Dadamah, Dissolve), Dean Roberts, Flies Inside The Sun; en Japón, Kousokuya, Mainliner, Musica Transonic, Acid Mothers Temple, Ghost.
+fix:
+52 Fuxa
+57 Lou Reed
+61 Royal Trux
+62 Sonic Youth
+63 Velvet Underground
+64 Pink Floyd
+65-69 Pelt
+72-73 Primordial Undermind
+78-82 Bardo Pond
+80 Popol Vuh
+81 Pink Floyd
+83-84 Hash Jar Tempo
+85-89 Ed Hall
+91 ST 37
+95 7% Solution
+97-98 Mike Gunn
+100 Charalambides
+102-104 Linus Pauling Quartet
+105 Vas Deferens Organization
+106-107 Vas Deferens Organization
+108 Matt Castille
+111 J. Bone Cro
+112 Jaloppy
+118-119 Subarachnoid Space
+120 Pink Floyd
+121 Pink Floyd
+122-123 Subarachnoid Space
+124-125 Mandible Chatter
+126 Mirza
+182 Dissolve
+184 Roy Montgomery
+185-193 Roy Montgomery
+190 x
+191 Terry Riley
+194-195 Thela
+196 White Winged Moth
+197-198 Dean Roberts
+199 Terminals
+200-201 Flies Inside The Sun
+202 Rain
+203 Rain
+204 Sleep
+205-206 Alastair Galbraith
+213-216 Acid Mothers Temple
+219 Angel In Heavy Syrup
+
+== 6.3 | Texas 1990-95
+id: space-rock-90s
+
+== 6.3 | San Francisco's noise psychedelia 1991-96
+id: space-rock-90s
+
+== 6.3 | The golden age of British psychedelia
+id: brit-psych-90s
+name: Psicodelia británica de los noventa
+fam: psico
+years: 1989-2002
+place: Reino Unido / Irlanda
+from: shoegaze, dream-pop, madchester, psych-revival
+desc: La edad de oro de la psicodelia británica no fueron los sesenta sino los noventa: las raves crean una demanda inagotable de música inducida por (o para) las drogas. La versión pop (Telescopes, Inspiral Carpets, Verve, Sundial, Auteurs, Kula Shaker), las más sofisticadas (Curve, Cranberries, Rollerskate Skinny, Beta Band, dEUS, Gorky's Zygotic Mynci), el space-rock libre (Porcupine Tree, Terminal Cheesecake, Heads), los últimos shoegazers (Ride, Swervedriver, Spectrum y E.A.R. de Sonic Boom, Spiritualized de Jason Pierce, Flying Saucer Attack, encuentro de shoegazing y ambient) y el dream-pop (Lush, Pale Saints, Slowdive, Catherine Wheel, Bark Psychosis).
+fix:
+129 Inspiral Carpets
+135 Kula Shaker
+136 Curve
+138 Rollerskate Skinny
+139-140 Beta Band
+141 dEUS
+142-144 Gorky's Zygotic Mynci
+146 Pink Floyd
+147-150 Porcupine Tree
+151-152 Terminal Cheesecake
+153 Heads
+155 Blind Mr Jones
+157 Spectrum
+158-159 Experimental Audio Research
+176 Levitation
+177 Catherine Wheel
+178-180 Bark Psychosis
+
+== 6.3 | Hyper-psychedelia in the Pacific, 1992-97
+id: space-rock-90s
+
+== 6.4
+id: garage-90s
+name: Surf y garage de los noventa
+fam: psico
+years: 1990-2003
+place: EE UU / Escandinavia / Australia
+from: psych-revival, american-graffiti, detroit, punk-crossover
+desc: La mayor concentración de garage-rock de los noventa está en Escandinavia (Hellacopters, Gluecifer, Motorpsycho). El revival instrumental: Man Or Astroman, Mermen, Los Straitjackets, Satan's Pilgrims, Shark Quest. La herencia de los Cramps (Oblivians, Reverend Horton Heat, Gas Huffer, Chrome Cranks, Southern Culture On The Skids), la de MC5 (God And Texas, New Bomb Turks, Love 666), el Noroeste (Mummies, Mono Men, Makers, Murder City Devils) y las nuevas lecturas del blues a la sombra de Jon Spencer: Railroad Jerk, Clawhammer, Gits, Delta 72, Mule y Red Red Meat, que evolucionan hacia la deconstrucción posmoderna y luego Califone.
+fix:
+3-4 Man Or Astroman
+5-7 Mermen
+13 Mark Brodie & The Beaver Patrol
+15 Oblivians
+16 Bodeco
+17 Reverend Horton Heat
+18-19 Gas Huffer
+21 Thomas Jefferson Slave Apartments
+22-23 Southern Culture On The Skids
+24 Lee Harvey Oswald Band
+29 Pipe
+30 Tight Bro's From Way Back When
+31 Love 666
+34 Sinister Six
+37 Prisonshake
+38 360's
+39 Mercy Rule
+40 Psyclone Rangers
+42 Clawhammer
+43 Gits
+44-45 Delta 72
+46 Rolling Stones
+47 Delta 72
+51-52 Red Red Meat
+57 Jonathan Fire Eater
+58 Bloodloss
+
+== 6.5
+id: lofi-pop
+name: Lo-fi pop
+fam: pop
+years: 1990-2002
+place: Nueva Zelanda / Olympia / EE UU
+from: antipodes-pop, college-pop, velvet
+desc: El gran invento de los independientes neozelandeses se convierte en uno de los fenómenos mundiales de los noventa: Cakekitchen, Bailter Space, Underground Lovers, King Loser; en Australia, Blackeyed Susans y Moles. En EE UU, Olympia (Beat Happening, Some Velvet Sidewalk, Spinanes), Modest Mouse y, sobre todo, Pavement, el grupo lo-fi más influyente (Slanted And Enchanted), con su contagio por todo el país (Silver Jews, Crowsdell). La vertiente más creativa, heredera de Half Japanese y los Residents: Trumans Water, Velocity Girl, Heavy Vegetable, Quintron, Danielson Famile, Soul Junk.
+fix:
+6 Blackeyed Susans
+7 Moles
+10 Ugly Casanova
+13 Silver Jews
+14 Crowsdell
+17 Royal Trux
+18-19 Velocity Girl
+20 Heavy Vegetable
+21 Vegetarian Meat
+22 Sincola
+23 Quintron
+24 Home
+25 Danielson Famile
+
+== 6.6
+id: songwriters-90s
+name: Cantautores lo-fi de los noventa
+fam: folk
+years: 1990-2003
+place: EE UU
+from: songwriters-80s, lofi-pop, alt-country
+desc: Los noventa son la década del cantautor: la tecnología y las redes informales del post-punk favorecen la carrera en solitario, con Joni Mitchell y Leonard Cohen (no Dylan ni Springsteen) como maestros. El folk sombrío inaugurado por Chris Isaak, Smog y American Music Club se convierte casi en un género: Vic Chesnutt, Mark Lanegan, Mountain Goats, Elliott Smith, Jeff Buckley, Ron Sexsmith, Mike Johnson, Simon Joyner, Songs:Ohia. El neo-pop de Stephen Merritt (Magnetic Fields: Holiday, The Charm Of The Highway Strip, 69 Love Songs), Chris Connelly, Frank Black, Mike Gira (Body Lovers, Angels Of Light), Richard Davies y Eric Matthews (Cardinal), David Gray. El neo-folk de Beck (folk para la era del hip hop), John Frusciante, Sparklehorse, Bright Eyes, Rufus Wainwright, Grandaddy, Bobby Conn; el neo-country de Richard Buckner y Freedy Johnston; Steve Wynn, Mike Watt, Paul Westerberg, Ben Harper.
+fix:
+0-1 Vic Chesnutt
+2-4 Mark Lanegan
+10 Ron Sexsmith
+13-16 Simon Joyner
+22 Songs:Ohia
+24-29 Magnetic Fields
+30-31 6ths
+33 Jason Falkner
+34 Tobin Sprout
+35 9-Iron
+36 Chris Connelly
+37 Bells
+38-39 Frank Black
+40 Mike Gira
+44 Angels Of Light
+45 David Kilgour
+47 Mark Eitzel
+48 Cardinal
+49-50 Richard Davies
+51 Eric Matthews
+52-55 David Gray
+59 Beck
+60 Paleface
+64 Archer Prewitt
+65 Sea Saw
+66 Illyah Kuryahkin
+67 Bright Eyes
+68 Joseph Arthur
+70 VAST
+71 Ben Lee
+72 Her Space Holiday
+73-74 Grandaddy
+76-77 Bobby Conn
+78 Lonesome Organist
+79-80 Richard Buckner
+81 Gerald Collier
+82 Pedro The Lion
+83 Varnaline
+84 Jim White
+85 Tim Easton
+86 Kevn Kinney
+87-90 Freedy Johnston
+91-94 Steve Wynn
+96 Paul Westerberg
+97-98 Sue Foley
+99 Chris Whitley
+100 Ben Harper
+
+== 6.6 | Post-feminism, 1990-99
+id: women-90s
+name: Cantautoras de los noventa
+fam: folk
+years: 1989-2003
+place: EE UU / Reino Unido / Islandia
+from: songwriters-80s, auteurs, dream-pop, punk-crossover
+desc: Las mujeres tienen sus propios estilos, en plural: Azalia Snail y su psicodelia lo-fi, Jarboe, Lida Husik (entre la cantante pop y la pintora sonora), Robin Holcomb, Lisa Germano (Geek The Girl, «un viaje dantesco a la psique de una chica»), Tori Amos, Juliana Hatfield, Kristin Hersh, Jewel, Natalie Merchant, Cat Power (Moon Pix), Edith Frost, Lauryn Hill, Shannon Wright. Las «grrrls» más airadas: Lois Maffeo, Ani DiFranco, PJ Harvey (Dry, Rid Of Me), Liz Phair (Exile In Guyville), DQE, Aimee Mann, Sheryl Crow, Alanis Morissette, Neko Case. Y los paisajes sonoros de Björk, la cantautora más influyente de la década, Kate St John, Natacha Atlas, Heather Duby, Solex y Beth Orton.
+fix:
+102-103 Azalia Snail
+107-110 Lida Husik
+112 Lida Husik
+113-115 Robin Holcomb
+119-120 Lisa Germano
+125-127 Juliana Hatfield
+128-130 Kristin Hersh
+131 Jewel
+133 Susan Voelz
+134 Danielle Howle
+137-138 Cat Power
+139 Fiona Apple
+140 Lili Haydn
+142 Edith Frost
+147 Lois Maffeo
+152-155 PJ Harvey
+157-158 Liz Phair
+160 Aimee Mann
+161 Sheryl Crow
+162 Meredith Brooks
+163 Alanis Morissette
+167-169 Bjork
+
+== 6.6 | Grrrrls, 1990-99
+id: women-90s
+
+== 6.6 | British soundscapes, 1993-99
+id: women-90s
+
+== 6.7
+id: industrial-90s
+name: La segunda venida del industrial
+fam: dark
+years: 1987-2001
+place: EE UU / Europa / Nueva Zelanda
+from: industrial-metal, ebm, industrial
+desc: En los noventa el estilo brutal de Nine Inch Nails lo invade todo en EE UU y el industrial se vuelve fenómeno de masas; el «aggro» de KMFDM es menos visible pero igual de ubicuo: Grotus, Filter, Stabbing Westward, Acumen, Skrew, Electric Hellfire Club, Society Burning, Gravity Kills y, lo más original, Girls Vs Boys (Venus Luxure No.1 Baby) y New Wet Kojak. La EBM internacional se vuelve más brutal (Leaether Strip, Suicide Commando, :Wumpscut:, Hocico, Mentallo & The Fixer). La «música de la fábrica de la muerte» sobrevive en los escultores de ruido: los neozelandeses Dead C (Harsh '70s Reality, «música imposible de escuchar»), Gate, Bruce Russell, Namanax, Illusion Of Safety, Maeror Tri, Towering Inferno (Kaddish). Y el «digital hardcore» de Atari Teenage Riot y Alec Empire.
+fix:
+0 Grotus
+1 Filter
+2 Stabbing Westward
+4 DJ? Acucrack
+7 Sister Machine Gun
+8 Ethyl Meatplow
+9 Electric Hellfire Club
+10 Chemlab
+11 Hate Dept
+12 16 Volt
+13 SMP
+14 Kevorkian Death Cycle
+15 Gravity Kills
+16 Bile
+17 Society Burning
+18 Hell3ent
+19 Drown
+20 God Lives Underwater
+21-22 Girls Vs Boys
+27 Klute
+28 Sloppy Wrenchbody
+29 Swamp Terrorists
+30 Psychopomps
+31 Steril
+32 Misery Loves Co
+34 Yelworc
+35 Leaether Strip
+36 Suicide Commando
+37 :Wumpscut:
+38 Allied Vision
+39 Hocico
+40-41 Mentallo & The Fixer
+42 Battery
+43 Scar Tissue
+44 Xorcist
+45-46 Dead C
+48 Grateful Dead
+49 Dead C
+51-54 Dead C
+58-59 A Handful Of Dust
+60-62 Bruce Russell
+63 Genocide Organ
+65 Illusion Of Safety
+67 Maeror Tri
+68 Crash Worship
+69 TchKung
+71 Babyland
+72 Atari Teenage Riot
+76 EC8OR
+
+== 6.8
+id: slo-core
+name: Slo-core
+fam: psico
+years: 1990-2002
+place: EE UU / Reino Unido
+from: space-pop, dream-pop, uk-guitar-pop, alt-country
+desc: Una de las innovaciones más importantes de los noventa: versión lenta, onírica y melancólica del dream-pop, descendiente de Galaxie 500 y Yo La Tengo, con composiciones largas y contenidas. Codeine la consagran (Frigid Stars); Seam, Red House Painters de Mark Kozelek (Down Colorful Hill), Low (I Could Live In Hope, Trust: el haiku del rock) y Bedhead. La balada etérea femenina: Mazzy Star, His Name Is Alive, Moon Seven Times, Congo Norvell, Helium, Elysian Fields. La balada atmosférica: Idaho, Acetone, Low Road, American Analog Set, Calla, y el «rock textural» del Noroeste: Built To Spill (Perfect From Now On), Silkworm, Red Stars Theory, Death Cab For Cutie. En Inglaterra, Drugstore, Mojave 3, Movietone.
+fix:
+2-5 Seam
+7 Red House Painters
+16-17 Bedhead
+18-19 Mazzy Star
+20-22 His Name Is Alive
+23 Moon Seven Times
+24 Congo Norvell
+25 Helium
+26 Elysian Fields
+27-28 Idaho
+29 Acetone
+31 Love Spirals Downwards
+32 Spain
+33 Drunk
+34 American Analog Set
+35 Calla
+37-38 Built To Spill
+43 Silkworm
+48 Kingsbury Manx
+49 Rainer Maria
+50 Death Cab For Cutie
+52 Bob Dylan
+53-54 Mojave 3
+55 Movietone
+
+== 6.9
+id: techno-90s
+name: Techno y trance de los noventa
+fam: negra
+years: 1990-2001
+place: Europa / EE UU
+from: techno, house, ebm, madchester
+desc: El techno y el house tardan una década en dominar el baile, pero luego se extienden como la pólvora y la diferencia entre ambos se difumina. Bélgica (Lords Of Acid), Francia (Laurent Garnier), Japón (Ken Ishii); Alemania tiene la escena más variada: Sven Väth inventa el trance de Frankfurt, Air Liquide el techno psicodélico de Colonia, La Bouche, L@n. Jimi Tenor, Ace Of Base, Aqua; en Australia, David Thrussell (Snog, Black Lung, Soma). EE UU, cuna del techno, es derivativo: Deee-Lite, Crystal Method, Jeff Mills (Underground Resistance), BT (el «epic house»), Wod, y San Francisco con su psicodelia electrónica (Hardkiss, Freaky Chakra). En Gran Bretaña, EMF, Utah Saints, Carter USM y el «Goa trance» de Paul Oakenfold (Paul Van Dyk, ATB).
+fix:
+1 Laurent Garnier
+2 Ken Ishii
+6-7 La Bouche
+8 L@n
+9 Apoptygma Berzerk
+10 Jimi Tenor
+11-12 Ace Of Base
+17-18 Jeff Mills
+19-21 BT
+22 Wod
+23 Hardkiss
+27 EMF
+28 New Mind
+29 Carter The Unstoppable Sex Machine
+31 ATB
+
+== 6.9 | Ambient House
+id: ambient-house
+name: Ambient house e IDM
+fam: vanguardia
+years: 1989-1999
+place: Reino Unido
+from: madchester, eno-ambient, techno, new-age
+desc: Música para relajarse en las «chill-out rooms» que se convierte en género propio, entre el techno y el minimalismo: Chill Out de KLF es su manifiesto; Irresistible Force, Orb (Adventures Beyond The Ultraworld, U.F. Orb: el DJ convertido en compositor clásico), Ultramarine, Global Communication, Spacetime Continuum, Banco De Gaia, Woob. La «Intelligent Dance Music»: Orbital (Brown Album), Eat Static, Sabres Of Paradise, Future Sound Of London, Black Dog, Leftfield, Richard James / Aphex Twin, Plastikman, Moby, Vapourspace. Y la música de baile para no bailarines: Scanner, Faithless, Lo-Fidelity Allstars, Luke Slater, Christian Vogel, David Holmes, Susumu Yokota.
+fix:
+32 KLF
+34 Irresistible Force
+35-38 Orb
+41-42 Ultramarine
+44 Spacetime Continuum
+48 Project Pitchfork
+49 Bionaut
+50 Haujobb
+52-54 Orbital
+55-57 Eat Static
+58-59 Sabres Of Paradise
+61-62 Future Sound Of London
+63 Black Dog Productions
+64 Leftfield
+65 AFX
+66-67 Aphex Twin
+79-80 Vapourspace
+111-113 Scanner
+115 Lo-Fidelity Allstars
+119 David Holmes
+120-121 Susumu Yokota
+
+== 6.9 | IDM
+id: ambient-house
+
+== 6.9 | Dance music for non-dancers
+id: ambient-house
+
+== 6.9 | Transglobal dance
+id: transglobal
+name: Transglobal dance
+fam: negra
+years: 1993-1999
+place: Reino Unido
+from: new-age, ambient-house, reggae
+desc: Otra innovación inglesa: fundiendo world music, arreglos electrónicos y ritmos de baile, estos conjuntos acuñan la síntesis definitiva de los noventa. Transglobal Underground (con la voz de Natacha Atlas) reinventan el ritmo mismo; Loop Guru, Paul Haslinger (Future Primitive), Mu-ziq, Cornershop, Tulku, Brainscapes, Talvin Singh.
+fix:
+81-82 Transglobal Underground
+86 Loop Guru
+87 Paul Haslinger
+92-93 Cornershop
+94-95 Tulku
+96 Brainscapes
+97 Talvin Singh
+
+== 6.9 | Big Beat
+id: big-beat
+name: Big beat
+fam: negra
+years: 1992-1999
+place: Reino Unido
+from: techno-90s, hip-hop, madchester
+desc: El último cruce de la década, entre techno y rock: breakbeats pegadizos y samples de novedad que se pueden tocar en directo y devuelven el protagonismo al «front-man». Prodigy, primeras superestrellas de la cultura rave (The Fat Of The Land); Underworld (Dubnobasswithmyheadman); Chemical Brothers; Fatboy Slim; Basement Jaxx; Daft Punk (Homework); Bentley Rhythm Ace.
+fix:
+101 Underworld
+102 Underworld
+105-106 Fatboy Slim
+110 Daft Punk
+
+== 6.10
+id: foxcore
+name: Foxcore y riot grrrls
+fam: punk
+years: 1988-1999
+place: Olympia / California / Medio Oeste
+from: punk-crossover, hardcore, art-punk, lofi-pop
+desc: El hardcore había sido un fenómeno masculino; el movimiento «riot grrrl» introduce el «factor chica» en la ecuación de frustración, depresión, desesperación y rabia. Nace en Olympia (fanzines como «Girl Germs», el lema «Revolution Girl Style Now!») y bebe de las cantautoras neoyorquinas, las bandas femeninas californianas (Runaways, Frightwig, L7) y las británicas (Raincoats, Slits). Un movimiento fundado en las letras, no en la música: Mecca Normal, Bikini Kill de Kathleen Hanna (y luego Le Tigre), Bratmobile, Team Dresch, Hole de Courtney Love, Seven Year Bitch, Sleater-Kinney. En California, Mudwimin, 4 Non Blondes, Tribe 8, Tiger Trap, Donnas, Red Aunts, That Dog, Muffs; en el Medio Oeste, Babes In Toyland (Fontanelle, «un arte de emociones extremas») y Sugarsmack; Free Kitten y Luscious Jackson en Nueva York.
+fix:
+0 Mecca Normal
+1-2 Bikini Kill
+3 Julie Ruin
+4 Le Tigre
+5 Bratmobile
+6 Calamity Jane
+7 Dickless
+9 Team Dresch
+10 Hole
+13 Mudwimin
+14 Stone Fox
+15 4 Non Blondes
+16 Tribe 8
+17 Tiger Trap
+18 Ovarian Trolley
+19-20 Donnas
+21 Red Aunts
+22 That Dog
+23 Muffs
+24 Zuzu's Petals
+26-27 Babes In Toyland
+28 Sugarsmack
+29 Murmurs
+30 Cake Like
+31 Slant 6
+
+== 6.11
+id: pop-90s
+name: Renacimiento pop, Elephant 6 y lounge-pop
+fam: pop
+years: 1990-1999
+place: EE UU / Canadá
+from: college-pop, power-pop, studio-pop, space-pop
+desc: En la primera mitad de los noventa el pop supera ampliamente a la música experimental: la revancha de la melodía tras un cuarto de siglo de sonidos progresivos. La vía más rentable sigue el pop barroco de los últimos Beach Boys, Van Dyke Parks, Big Star y XTC: Jellyfish (Bellybutton), Imperial Teen, Velvet Crush, Material Issue, Eggs, Fountains Of Wayne, Ben Folds Five, Chainsaw Kittens, Barenaked Ladies. El colectivo «Elephant 6» de Georgia y Luisiana es la escuela pop más influyente de la década: Apples In Stereo, Olivia Tremor Control, Neutral Milk Hotel (In The Aeroplane Over The Sea), Elf Power, Of Montreal; y sus herederos Ladybug Transistor y Photon Band. El folk-pop a lo Tom Petty y R.E.M.; el «lounge-pop» (Combustible Edison, Zumpano, Ivy, Cardigans, Squirrel Nut Zippers); el teen-pop (Hanson, Britney Spears, Backstreet Boys).
+fix:
+1 Jellyfish
+2 Orange Peels
+3 Beulah
+4 764-Hero
+5 Super Deluxe
+6 Material Issue
+8-9 Fountains Of Wayne
+10 Ben Folds Five
+12 Barenaked Ladies
+13 Crash Test Dummies
+14 Apples In Stereo
+15-16 Olivia Tremor Control
+19 Of Montreal
+21 Photon Band
+22 Flake
+23 Marcy Playground
+24 Superdrag
+25 Hang Ups
+26 Throneberry
+27 Fastball
+28 Fig Dish
+29 Supernova
+30 Possum Dixon
+
+== 6.11 | Brit-pop
+id: britpop
+name: Brit-pop y post-pop
+fam: pop
+years: 1990-2001
+place: Reino Unido
+from: uk-guitar-pop, madchester, pub-rock, british-invasion
+desc: Como tantas veces, el fenómeno más publicitado es el menos interesante: un «brit-pop» de grupos terriblemente parecidos y tediosos, sin apenas imaginación. Lo anticipan Lightning Seeds, La's, Teenage Fanclub y Heavenly; estalla con Boo Radleys, Blur (Parklife) y Oasis (el «farol» que mejor personifica la moda). Suede y el glam-pop (Super Furry Animals, Placebo), las excepciones de High Llamas (Hawaii) y Supergrass, el revival mod (Ocean Colour Scene, Wildhearts), Elastica, Sleeper, las Spice Girls; Trembling Blue Stars, Tindersticks, Delgados. El post-pop de Radiohead, «la banda más publicitada y sobrevalorada de la década», cuyo OK Computer es una obra maestra del falso vanguardismo; Coldplay, Travis.
+fix:
+31 Lightning Seeds
+32 La's
+33 Teenage Fanclub
+34 Heavenly
+38 Blur
+39-40 Oasis
+42 Super Furry Animals
+43 Placebo
+44-45 High Llamas
+46 Supergrass
+47 Ocean Colour Scene
+48 Wildhearts
+49 Comet Gain
+50 Elastica
+51 Sleeper
+52 Catatonia
+53 Mansun
+54 Stereophonics
+55 Adventures In Stereo
+56 Embrace
+57 Trembling Blue Stars
+59-60 Tindersticks
+61 Urusei Yatsura
+62 Delgados
+
+== 6.11 | Lounge-pop
+id: pop-90s
+fix:
+63-64 Combustible Edison
+65 Zumpano
+66 Ivy
+67 Sukia
+68 Cardigans
+69 Squirrel Nut Zippers
+71 Opal Foxx Quartet
+
+== 6.11 | Retro futurism
+id: retro-futurism
+name: Retrofuturismo y kitsch
+fam: pop
+years: 1987-2002
+place: Reino Unido / Japón / Francia / Alemania
+from: synth-pop, krautrock, britpop, space-pop
+desc: Una visión nostálgica del pop de los sesenta con ritmos y arreglos electrónicos: Stereolab (Transient Random Noise Bursts With Announcements, Mars Audiac Quintet), lenguaje tan austero como la música clásica y tan ligero como el easy-listening; Saint Etienne (Foxbase Alpha, Tiger Bay); State Of Grace, Broadcast y el «hard electronica» de Add N To X. Japón sobresale en el kitsch paródico y futurista: Pizzicato Five, Cibo Matto, Fantastic Plastic Machine, Buffalo Daughter, Cornelius. Y fuera: Air (Moon Safari), Mocket, Komeda, Stereo Total, Beanfield, Le Hammond Inferno.
+fix:
+75 Stereolab
+81-84 Saint Etienne
+84 State Of Grace
+85 Space
+86 Broadcast
+87-88 Add N To X
+101 Mocket
+102 Komeda
+103 Stereo Total
+104 Beanfield
+105 Le Hammond Inferno
+98-99 Cornelius
+
+== 6.11 | Japanese Kitsch
+id: retro-futurism
+
+== 6.11 | International Kitsch
+id: retro-futurism
+
+== 6.11 | Post-pop
+id: britpop
+fix:
+106-108 Radiohead
+109 Beatles
+113 Radiohead
+115 Six By Seven
+116 Coldplay
+
+== 6.11 | Teen-pop
+id: pop-90s
+
+== 6.12
+id: grunge
+desc: El grunge, revival del hard rock de los setenta y renacimiento musical de Seattle, fue uno de los grandes fenómenos de los noventa (casi solo en EE UU). Green River lo inauguran (Come On Down) y Pearl Jam, Soundgarden, Melvins y Mudhoney fijan sus cuatro puntos cardinales; Nirvana, con Nevermind, lo convierten en una tragaperras y en la banda sonora de la crisis nerviosa de una generación. Después, Alice In Chains (Dirt), Foo Fighters, Hammerbox, GodHeadSilo, Everclear, Stone Temple Pilots, Tool (el grupo más innovador de la segunda generación: Aenima, Lateralus), God Machine, Helmet, Quicksand, Urge Overkill, los Smashing Pumpkins (Siamese Dream, Mellon Collie), Scarce, Creed, Bush, Manic Street Preachers, Silverchair.
+fix:
+2 My Sister's Machine
+3 Truly
+4 Foo Fighters
+7-8 GodHeadSilo
+8 Hammerhead
+9 Atomic 61
+13-14 Stone Temple Pilots
+16 Tool
+19 Helmet
+20 Quicksand
+21-22 Surgery
+23 H.P. Zinker
+24 Urge Overkill
+29 Big Chief
+30 Walt Mink
+31 Verbena
+32 Collective Soul
+33 Toadies
+34-35 Creed
+36 Bush
+37 Manic Street Preachers
+
+== 6.12 | Grunge around the world
+id: grunge
+
+== 6.13
+id: hip-hop
+fix:
+0 Wu-Tang Clan
+3 GZA/Genius
+10 Roots
+11 Fun Lovin' Criminals
+
+== 6.14
+id: alt-country
+desc: La revolución iniciada en Chicago por Souled American y Uncle Tupelo (No Depression: baladas country con la furia del hardcore) se convierte en los noventa en un género propio: sus herederos abandonan el hardcore por los sonidos más espartanos y tradicionales. Son Volt de Jay Farrar y Wilco de Jeff Tweedy (Being There, Yankee Hotel Foxtrot); Will Oldham (Palace) arranca el movimiento; Freakwater, Ida, Handsome Family, Retsin, Blue Mountain, Whiskeytown, Grant Lee Buffalo, Citizens' Utilities, Willard Grant Conspiracy. El «chamber folk» de Lambchop, Lullaby For The Working Class, Geraldine Fibbers y Pinetop Seven; el country-rock de Volebeats, Ass Ponys, Sixteen Horsepower, Old 97's y los terroristas Grifters; el folk-rock de Swell, Counting Crows, Cracker, Cake, Hootie & The Blowfish; los Black Crowes; Belle And Sebastian, Arab Strap y los polacos Atman.
+fix:
+0 Son Volt
+1 Bob Dylan
+2-4 Wilco
+5 Beach Boys
+6 Radiohead
+7 Palace Brothers
+8 Palace
+9 Freakwater
+10 Ida
+11 Handsome Family
+12 Retsin
+13 Blue Mountain
+14 Two Dollar Guitar
+15 Whiskeytown
+16 Grant Lee Buffalo
+17-19 Citizens' Utilities
+20 Scud Mountain Boys
+21 Pernice Brothers
+22-23 Willard Grant Conspiracy
+26 Robbie Fulks
+27 Josh Rouse
+28-29 Lambchop
+30-32 Lullaby For The Working Class
+34 Geraldine Fibbers
+35 Pinetop Seven
+36 Mysteries Of Life
+37 Volebeats
+38 Ass Ponys
+39 Blood Oranges
+40-41 Sixteen Horsepower
+42 Bottle Rockets
+43 Hazel
+44 Tilt
+45 Stranglmartin
+46 Caustic Resin
+47 Old 97's
+48 New Duncan Imperials
+49 Strapping Fieldhands
+51-55 Grifters
+56 Moviola
+57 Bad Livers
+58 Split Lip Rayfield
+59 X-Tal
+60 Harm Farm
+61 Bedlam Rovers
+62 Tarnation
+65 Counting Crows
+67 Cake
+68 Third Eye Blind
+69 Hootie & The Blowfish
+71-72 Wheat
+73 Wallflowers
+74 Black Crowes
+75 Fire & Ice
+76 Scott 4
+77 Gomez
+78-81 Belle And Sebastian
+82-83 Appendix Out
+84 Arab Strap
+85 Kampec Dolores
+86 Hybryds
+87-88 Atman
+89 Magic Carpathians Project
+
+== 6.14 | Chamber Folk
+id: alt-country
+
+== 6.14 | Country-rock
+id: alt-country
+
+== 6.14 | Folk-rock
+id: alt-country
+
+== 6.14 | Soul-rock
+id: alt-country
+
+== 6.14 | British folk-rock
+id: alt-country
+
+== 6.14 | World music
+id: alt-country
+
+== 6.15
+id: punk-pop-90s
+name: Hardcore en la era del punk-pop: emocore, ska-core y post-hardcore
+fam: punk
+years: 1989-2001
+place: EE UU
+from: punk-crossover, hardcore, extreme-hardcore, noise-90s
+desc: Mientras las revistas anuncian la «muerte del punk», el hardcore se convierte en un movimiento que no deja pueblo sin tocar y genera subgéneros. El «emocore» (Jawbreaker, Weezer, Sunny Day Real Estate, Promise Ring, At The Drive-In, Jimmy Eat World, Seaweed); el hardcore progresivo de Washington (Nation Of Ulysses, Make-Up, Shudder To Think, Jawbox, Edsel, Lungfish, Circus Lupus, Dismemberment Plan); el «ska-core» (Operation Ivy, Rancid, Mighty Mighty Bosstones, Sublime, No Doubt); el punk-pop que llega a las listas (Green Day, Offspring, Flop, Pennywise, Pegboy, Superchunk, Queers); el garage-punk californiano (Drive Like Jehu, Rocket From The Crypt, Blink 182, Zen Guerrilla); el jazzcore (Bazooka, Iceburn); la vieja escuela (D Generation, Supersuckers, Zeke, Dropkick Murphys, Silverfish, Turbonegro) y el post-hardcore de Unwound.
+fix:
+0 Jawbreaker
+1 Heatmiser
+2 Weezer
+3 Sunny Day Real Estate
+4 Promise Ring
+5 Braid
+6 At The Drive-In
+7 Elliott
+8 Appleseed Cast
+9 Jimmy Eat World
+13 Gardener
+16-17 Make-Up
+23-24 Edsel
+28 Circus Lupus
+32 Chisel
+33 Dismemberment Plan
+34 Operation Ivy
+37 Rancid
+39 Mighty Mighty Bosstones
+40 Less Than Jake
+41 Gadjits
+42 Slackers
+43 Pietasters
+44 Lucky Boys Confusion
+45 Sublime
+46 No Doubt
+47 Voodoo Glow Skulls
+48 Black 47
+52 Pure Joy
+57 Face To Face
+58 Offspring
+59 Humpers
+60 Streetwalkin' Cheetahs
+61 Pegboy
+63-64 Poster Children
+65 Superchunk
+66 Cub
+67 Tuscadero
+68 Wrens
+69 Shame Idols
+70 Queers
+71 Idlewild
+72 Pitchfork
+75-78 Rocket From The Crypt
+79 aMiniature
+81 Blink 182
+84 Zen Guerrilla
+85 Bazooka
+86 Trash Can School
+91 Iceburn
+93 Creedle
+94 Stratotanker
+95 Irving Klaw Trio
+96 Candy Machine
+97 Kepone
+98 D Generation
+99 Electric Frankenstein
+100 Chavez
+101 Supersuckers
+103 Gaunt
+106 Skunk Anansie
+108 Unwound
+113 Dirt
+114 Mount Shasta
+117 Drain
+119 Janitor Joe
+120 Tar
+121 Calvin Krime
+122 Terrifying Experience
+123 Stanford Prison Experiment
+124-125 Juno
+
+== 6.16
+id: metal-90s
+name: Metal de los noventa: progresivo, death y black metal
+fam: hard
+years: 1990-2000
+place: EE UU / Escandinavia
+from: metal-80s, extreme-metal, thrash, industrial-metal
+desc: Si los ochenta fueron la edad de oro del heavy metal, los noventa lo fragmentan en estilos que amplían ideas anteriores. El pop-metal (Warrant, Extreme, Live) es lo menos significativo; Marilyn Manson casa el scum-rock de Alice Cooper con el industrial de Nine Inch Nails. El metal progresivo (Warrior Soul, Dream Theater, Royal Hunt, Opeth, los suizos Alboth!). El death metal muta en algo más terrible y más musical gracias a Brutal Truth, Cannibal Corpse y, sobre todo, la tríada de Type O Negative (Slow Deep And Hard, misas negras wagnerianas), Today Is The Day y Fear Factory; Biohazard, Coalesce, Dillinger Escape Plan. El nuevo black metal escandinavo: Entombed, Darkthrone, Immortal, Mayhem, Enslaved, Emperor, Satyricon, Cradle Of Filth.
+fix:
+0 Warrant
+1 Extreme
+2 Live
+3-4 Marilyn Manson
+5 Warrior Soul
+6 Naked Sun
+10 Royal Hunt
+11-12 Opeth
+13 Alboth!
+14 Brutal Truth
+15 Cannibal Corpse
+16 Acid Bath
+25 Biohazard
+27 Dillinger Escape Plan
+35 Ved Buens Ende
+
+== 6.16 | Doom metal
+id: stoner-doom
+name: Doom, super-doom y stoner rock
+fam: hard
+years: 1990-2000
+place: Reino Unido / Seattle / California
+from: grunge, metal-80s, hard-rock, psych-madness
+desc: El doom (exageración lenta, gótica y barroca de los grooves de Black Sabbath) crece en Inglaterra: Paradise Lost, Cathedral (las largas suites líricas de Forest Of Equilibrium), My Dying Bride y Electric Wizard, que infla la pesadez hasta que la música ya no fluye, solo retumba (Come My Fanatics, Dopethrone); Orange Goblin, Katatonia. El «super-doom» de los Melvins sigue en Seattle con Earth (drones colosales entre La Monte Young y monstruos extraterrestres), Karp, Sunn, y el «sludgecore» del Sur (Eyehategod, Harvey Milk). El stoner rock: Kyuss, Queens Of The Stone Age, Sleep, Fu Manchu, Monster Magnet, Wellwater Conspiracy, Boris.
+fix:
+37 Paradise Lost
+38 Cathedral
+40 Electric Wizard
+41-42 Electric Wizard
+43 Orange Goblin
+44 Katatonia
+45-48 Earth
+49 Lou Reed
+52 Eyehategod
+53 Sweet Pea
+55 Harvey Milk
+56 Wellwater Conspiracy
+
+== 6.16 | Super-doom
+id: stoner-doom
+
+== 6.16 | Stoner rock
+id: stoner-doom
+
+== 6.16 | Funk-metal
+id: funk-metal
+fix:
+57 Scatterbrain
+
+== 6.17
+id: alt-rock
+name: Alt-rock de los noventa
+fam: pop
+years: 1990-1999
+place: EE UU / Holanda
+from: noise-rock, college-pop, noise-90s
+desc: El formato «alt-pop» acuñado por los Pixies (melódico pero no trivial, excéntrico, apasionado sin ser hardcore) continúa en los centros del college-pop: Boston (Belly, Breeders, Letters To Cleo y Morphine, una de las grandes bandas de la década), Georgia (Magnapop), Los Ángeles (Madder Rose), Carolina del Norte (Archers Of Loaf), Nueva York (Dogbowl, King Missile), Holanda (Bettie Serveert), Garbage y Eels. A mediados de década, el epitafio del noise-rock: Poem Rocket, Lynnfield Pioneers, Skeleton Key, Blonde Redhead y el supergrupo Firewater.
+fix:
+0-3 Madder Rose
+4 Spatula
+9-10 Firewater
+
+== 6.17 | Noise-rock's epitaph 1995-97
+id: alt-rock
+
+== 6.18
+id: gothic-90s
+name: Rock gótico de los noventa
+fam: dark
+years: 1990-1999
+place: EE UU / Alemania / Suecia
+from: dark-punk, apocalyptic-folk, dream-pop, industrial
+desc: El gótico, más una actitud que un sonido, se refina en los noventa con mejores estudios y teclados electrónicos, y su liderazgo pasa de Gran Bretaña a EE UU. En Alemania, Das Ich (Staub); en Suecia, la escuela «constructivista» de ambient-gótico-industrial (Brighter Death Now, Raison D'Etre, Arcana, Deutsch Nepal), más cerca de la música clásica que del rock. En EE UU, el sello Projekt: Lycia, Black Tape For A Blue Girl, Love Spirals Downwards, Faith And The Muse, Rasputina; en Europa del Este, los herederos de Laibach; en Australia, Shinjuku Thief.
+fix:
+1-2 Shinjuku Thief
+
+== 6.19
+id: drum-n-bass
+name: Drum'n'bass y jungle
+fam: negra
+years: 1990-1999
+place: Londres
+from: techno-90s, hip-hop, reggae, ebm
+desc: La música de baile de los noventa rechaza el hedonismo simple: el «jungle» o «drum'n'bass» redescubre la sección rítmica tradicional para potenciar el ritmo electrónico, una variante sincopada del house que funde hip hop y techno. Anticipado por Meat Beat Manifesto, adoptado por Fabio y Grooverider en el club Rage; Roni Size, LTJ Bukem, 4 Hero, Plaid; Goldie abre la edad de oro (1995) e inventa el jungle ambient; Photek y el jazz; Boymerang; el «techstep» (Panacea) y el jungle conceptual de vanguardia (Spring Heel Jack, Squarepusher).
+fix:
+0 Plaid
+2 Panacea
+
+== 6.20
+id: trip-hop
+name: Trip-hop e illbient
+fam: negra
+years: 1990-1999
+place: Bristol / Nueva York
+from: hip-hop, reggae, dream-pop, ambient-house
+desc: El gran invento inglés de finales de los noventa: ritmos de baile, trance de dub psicodélico y atmósfera de soft-jazz. Precedido por A R Kane, Coldcut, Sade, Neneh Cherry, Cowboy Junkies y Blue Nile, nace en Bristol (Soul II Soul, Massive Attack, Nightmares On Wax) y estalla en 1994 con Portishead y Tricky; después, el diluvio (Howie B, Lamb, Morcheeba). El hip hop instrumental de DJ Shadow y DJ Krush, Kruder & Dorfmeister, Amon Tobin, Cinematic Orchestra, DJ Cam; en Nueva York, el «illbient» (Sub Dub, DJ Spooky); y el dub reinventado como arte austero (Thievery Corporation, Pole).
+fix:
+0 DJ Cam
+
+== 6.21
+id: post-rock
+name: Post-rock
+fam: vanguardia
+years: 1989-2002
+place: Kentucky / Chicago / EE UU / Europa
+from: noise-rock, kosmische, krautrock, slo-core, prog-90s
+desc: Quizá la escuela regional más importante de los noventa salió de la escena más improbable y la que menos discos vendió: el post-rock de Kentucky. Slint y Bitch Magnet (1989) introducen un estilo enrevesado, angular y cerebral, «progresivo para una época que ya no apreciaba las emociones enfáticas»; lo continúan Gastr Del Sol, For Carnation, June Of 44, Rachel's. Chicago lo codifica con acento alemán (Can, Faust, Neu): Tortoise y sus descendientes, Jim O'Rourke (de Cage y Derek Bailey a Fahey y el pop orquestal), DK3, Isotope 217. El rock instrumental (Don Caballero, Godspeed You Black Emperor, Dirty Three, Mogwai, Labradford, Stars Of The Lid); Alemania (Mouse On Mars, To Rococo Rot, Notwist), el «noise-core» japonés (Zeni Geva, Merzbow, Boredoms) y Old Time Relijun, discípulos de Beefheart.
+fix:
+10 Chicago Frontier
+11-13 Denison-Kimball Trio
+14 Engine Kid
+15 El Guapo
+20 A Minor Forest
+21-22 Stars Of The Lid
+23-24 Salamander
+26 Pink Floyd
+27-28 Oneida
+29-31 Old Time Relijun
+
+== 6.22
+id: ambient-glitch
+name: Ambient, drones y glitch
+fam: vanguardia
+years: 1988-2002
+place: Europa / EE UU / Japón
+from: ambient-house, new-age, shoegaze, space-rock-90s, eno-ambient
+desc: Nuevas técnicas de estudio e instrumentos digitales permiten nuevas formas de composición: Trance Mission, Kim Cascone, Uwe Schmidt (Atom Heart, Señor Coconut). La world music electrónica ambient (Vidna Obmana, Kenneth Newby, A Produce, Delerium, Enigma, Deep Forest, TUU, Badawi, Tuatara); la música de drones de guitarra post-shoegazing (Maeror Tri, Seefeel, Main, Amp, Third Eye Foundation) y el «ambient guitar noise» (Windy & Carl, Azusa Plane, Yume Bitsu, Surface Of Eceon). El «glitch», techno ultra-minimal hecho de errores digitales: Autechre, Oval, Alva Noto, Pan Sonic, Fennesz, Boards Of Canada, Ryoji Ikeda, Matmos. El ambient puro y el ruido (Tetsu Inoue, Thomas Köner, Aube), los tocadiscos virtuosos (Otomo Yoshihide) y la vanguardia ambient (Paul Schütze, Eliane Radigue, Hood, Vibracathedral Orchestra, Sigur Rós).
+fix:
+0 Kim Cascone
+1 Kim Cascone
+2 Lassigue Bendthaus
+3 Atom Heart
+4 N+
+5 Senor Coconut Y Su Conjunto
+6 Flanger
+7-8 Vidna Obmana
+9 Vidna Obmana, Steve Roach & Robert Rich
+10 Vidna Obmana
+11 Kenneth Newby
+13-15 Delerium
+17 Onna-Kodomo
+18 Popol Vuh
+20-21 TUU
+22 Voices Of Kwahn
+25 Badawi
+26 Tuatara
+29-30 Windy & Carl
+32-33 Yume Bitsu
+35 Liquid Mind
+37-39 Paul Schutze
+48 Cevin Key
+52-54 Vibracathedral Orchestra
+
+== 7
+id: year-2000
+name: 2000: apogeo y caída de la industria
+fam: pop
+years: 1996-2001
+place: Mundo
+from: pop-90s, britpop
+desc: Los noventa ven el apogeo y la caída de la industria discográfica: el CD multiplica sus ingresos (cinco «majors» controlan el 95% de los discos vendidos en 1999), Mariah Carey bate récords de Presley y los Beatles y «Candle In The Wind» de Elton John supera a «White Christmas» como canción más vendida. Pero en 1999 Shawn Fanning funda Napster y millones de internautas dejan de pagar por la música: en 2001 las ventas caen por primera vez en años.
+fix:
+0 Mariah Carey
+1 Elton John

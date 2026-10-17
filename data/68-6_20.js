@@ -1,0 +1,4 @@
+// Sección 6.20 · Trip-hop — generado por tools/build_data.py.
+ROCK.add([
+{"id":"trip-hop","tracks":[{"a":"DJ Cam","t":"Substances","k":"a","p":293,"s":"6.20","y":1996}],"artists":[],"name":"Trip-hop e illbient","family":"negra","place":"Bristol / Nueva York","desc":"El gran invento inglés de finales de los noventa: ritmos de baile, trance de dub psicodélico y atmósfera de soft-jazz. Precedido por A R Kane, Coldcut, Sade, Neneh Cherry, Cowboy Junkies y Blue Nile, nace en Bristol (Soul II Soul, Massive Attack, Nightmares On Wax) y estalla en 1994 con Portishead y Tricky; después, el diluvio (Howie B, Lamb, Morcheeba). El hip hop instrumental de DJ Shadow y DJ Krush, Kruder & Dorfmeister, Amon Tobin, Cinematic Orchestra, DJ Cam; en Nueva York, el «illbient» (Sub Dub, DJ Spooky); y el dub reinventado como arte austero (Thievery Corporation, Pole).","start":1990,"end":1999,"influences":["hip-hop","reggae","dream-pop","ambient-house"],"secs":["6.20"]}
+]);
