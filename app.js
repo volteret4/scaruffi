@@ -495,9 +495,16 @@
   }
   window.addEventListener('resize', fitScrollers);
   document.querySelectorAll('.views button').forEach((b) => b.addEventListener('click', fitScrollers));
+  // Pestaña «Portadas» (covers.js, común a todas las webs de Music_Books).
+  const portadas = Portadas({
+    all, FAMILIES, esc, trackHtml, togglePlayer, open, YT, data: window.ROCK_COVERS,
+    matches: trackMatches, isKey: (t) => !!(t.best || t.r != null || t.n != null),
+    keyLabel: 'Solo mejores discos ★', keyName: 'en las listas de mejores discos',
+    where: (r) => r.s ? `${esc(secName(r.s))} ${pdfLink(r.p)}` : '',
+  });
   function render() {
     $('#ftoggle').classList.toggle('active', !!state.q || state.off.size > 0);
-    renderTimeline(); renderList(); renderDiscs(); renderBySection(); renderBest(); stickMain(); fitScrollers();
+    renderTimeline(); renderList(); renderDiscs(); renderBySection(); renderBest(); portadas.render(); stickMain(); fitScrollers();
   }
   render();
   const hash = location.hash.slice(1);
