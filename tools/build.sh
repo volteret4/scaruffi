@@ -23,4 +23,5 @@ block = '<!-- secciones:inicio -->\n' + sys.argv[1].replace('\\n', '\n') + '<!--
 s = re.sub(r'<!-- secciones:inicio -->.*?<!-- secciones:fin -->', block, s, flags=re.S)
 open(p, 'w').write(s)
 PY
-for f in data/*.js app.js covers.js; do node --check "$f"; done
+python3 -I tools/pdfpages.py --sin-discos - "$(ls *.pdf | head -n 1)"
+for f in data/*.js app.js covers.js menciones.js; do node --check "$f"; done

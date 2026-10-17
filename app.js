@@ -502,6 +502,9 @@
     keyLabel: 'Solo mejores discos ★', keyName: 'en las listas de mejores discos',
     where: (r) => r.s ? `${esc(secName(r.s))} ${pdfLink(r.p)}` : '',
   });
+  // Pestaña «Menciones» (menciones.js, común a todas las webs de Music_Books).
+  Menciones({ all, FAMILIES, esc, trackHtml, togglePlayer, open, portadas, data: window.ROCK_COVERS,
+    pageLink: (m) => pdfLink(m[1]) });
   function render() {
     $('#ftoggle').classList.toggle('active', !!state.q || state.off.size > 0);
     renderTimeline(); renderList(); renderDiscs(); renderBySection(); renderBest(); portadas.render(); stickMain(); fitScrollers();

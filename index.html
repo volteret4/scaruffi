@@ -12,6 +12,7 @@
 <body>
 <header class="top">
   <div class="brand">
+    <a class="home" href="../index.html">← Todos los libros</a>
     <h1>Historia del rock <span>· 1951-2000, según Piero Scaruffi</span></h1>
     <p class="sub">Timeline de géneros, influencias, discos y canciones, recopilados sección a sección de <i>A History of Rock Music 1951-2000</i> (Piero Scaruffi), con su vídeo en YouTube.</p>
   </div>
@@ -29,6 +30,7 @@
     <button data-view="ess">Mejores discos</button>
     <button data-view="list">Géneros</button>
     <button data-view="covers">Portadas</button>
+    <button data-view="mentions">Menciones</button>
   </div>
   <div class="families" id="families"></div>
 </nav>
@@ -52,6 +54,7 @@
   <section id="ess" class="view discs"></section>
   <section id="list" class="view"></section>
   <section id="covers" class="view"></section>
+  <section id="mentions" class="view"></section>
 </main>
 
 <aside id="panel" aria-hidden="true">
@@ -138,6 +141,7 @@
 <script src="data/yt.js"></script>
 <script src="data/covers.js"></script>
 <script src="covers.js"></script>
+<script src="menciones.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
