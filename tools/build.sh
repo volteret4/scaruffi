@@ -13,6 +13,7 @@ python3 -I tools/build_data.py build/sections.json build/appendix.json
 if [ "$1" = "--yt" ]; then
 python3 -I tools/yt.py | grep -v "^OK  " || true
 if [ -n "$LASTFM_API_KEY" ]; then python3 -I tools/covers.py; else echo "Sin LASTFM_API_KEY: no se actualizan las portadas"; fi
+python3 -I tools/discos.py
 fi
 tags=$(for f in data/[0-9]*.js; do printf '<script src="%s"></script>\\n' "$f"; done)
 python3 -I - "$tags" <<'PY'
