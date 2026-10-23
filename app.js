@@ -73,6 +73,11 @@
   });
   $('#close').onclick = closePanel;
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePanel(); });
+  // Clic fuera de la ficha lateral: cerrarla. Va en la fase de captura, antes de que el clic, si es
+  // en otra escena o disco, abra su ficha.
+  document.addEventListener('click', (e) => {
+    if ($('#panel').classList.contains('open') && !e.target.closest('#panel')) closePanel();
+  }, true);
 
   // ---------- Timeline ----------
   const pos = new Map();
@@ -350,7 +355,7 @@
         <span>${g.start}–${g.end ?? '…'}</span>
         ${g.place ? `<span>${esc(g.place)}</span>` : ''}
       </div>
-      <button class="tofocus" data-focus="${id}">Ver su timeline individual</button>
+      <div class="tobtns"><button class="tofocus" data-focus="${id}">Ver su mapa de influencias</button>${menciones.has(id) ? `<button class="tofocus" data-menc="${id}">Ver sus menciones</button>` : ''}</div>
       <div class="desc"><div class="src">Resumen a partir del libro</div>${esc(g.desc || '')}</div>
       <h4>En el libro</h4><div class="tags">${g.secs.map((n) => `<span>${esc(secName(n))} · ${pdfLink(secByNum.get(n)?.p) || ''}</span>`).join('')}</div>
       ${g.influences.length ? `<h4>Viene de</h4><div class="links">${g.influences.map(chipFor).join('')}</div>` : ''}
@@ -361,6 +366,8 @@
     `;
     $('#detail').querySelectorAll('[data-go]').forEach((b) => b.onclick = () => open(b.dataset.go));
     $('#detail').querySelector('[data-focus]').onclick = () => showFocus(id);
+    const mb = $('#detail').querySelector('[data-menc]');
+    if (mb) mb.onclick = () => menciones.show(id);
     $('#detail').querySelectorAll('.play').forEach((b) => b.onclick = () => togglePlayer(b));
     $('#panel').classList.add('open');
     $('#panel').setAttribute('aria-hidden', 'false');
@@ -371,12 +378,16 @@
     $('#panel').classList.remove('open');
     $('#panel').setAttribute('aria-hidden', 'true');
     const inFocus = state.view === 'focus' && focus.root;
-    history.replaceState(null, '', inFocus ? '#focus=' + focus.root : location.pathname);
+    // En Menciones se conserva la selección de géneros y se quita solo el artista.
+    const inMentions = location.hash.startsWith('#menciones=');
+    history.replaceState(null, '', inFocus ? '#focus=' + focus.root : inMentions ? location.hash.split('%7C')[0] : location.pathname);
   }
 
-  // ---------- Timeline individual ----------
-  // Un género raíz con sus influencias (padres) y lo que influye (hijos); el botón «+» de
-  // cualquier género visible despliega también sus padres e hijos, sin quitar lo anterior.
+  // ---------- Mapa de influencias ----------
+  // Un género raíz con sus influencias (padres) y lo que influye (hijos), como un mapa conceptual
+  // sin eje de años: cada columna es una generación, de lo que influye (izquierda) a lo influido
+  // (derecha), y cada género lleva sus años. El botón «+» de cualquier género visible despliega
+  // también sus padres e hijos, sin quitar lo anterior.
   const focus = { root: null, open: new Set() };
   const parentsOf = (id) => byId.get(id).influences.filter((p) => byId.has(p));
   const relatives = (id) => [...parentsOf(id), ...children.get(id)];
@@ -407,6 +418,7 @@
   });
   $('#freset').onclick = () => { if (focus.root) pickFocus(focus.root); };
 
+  const NODE_H = 40, GAP_Y = 14, GAP_X = 80, PAD = 20, BTN = 22;
   function renderFocus() {
     const svg = $('#fsvg');
     svg.innerHTML = '';
@@ -415,69 +427,105 @@
     $('#fhint').hidden = true;
     const shown = new Set();
     for (const id of focus.open) { shown.add(id); relatives(id).forEach((r) => shown.add(r)); }
-    const items = [...shown].map((id) => byId.get(id)).sort((a, b) => a.start - b.start || a.name.localeCompare(b.name));
-    const from = Math.floor((Math.min(...items.map((g) => g.start)) - 4) / 10) * 10;
-    const to = Math.ceil((Math.max(...items.map(endOf)) + 4) / 10) * 10;
-    const fx = (yr) => (yr - from) * PX + 10;
-    const BTN = 22;
-    const rows = [];
-    const lay = new Map();
-    for (const g of items) {
-      const gx = fx(g.start), gw = Math.max(6, fx(endOf(g)) - gx);
-      const fits = g.name.length * 6.6 + 10 < gw;
-      const textEnd = fits ? gx + gw : gx + gw + 5 + g.name.length * 6.1;
-      let r = rows.findIndex((end) => end < gx - 4);
-      if (r < 0) { r = rows.length; rows.push(0); }
-      rows[r] = textEnd + BTN + 10;
-      lay.set(g.id, { gx, gw, fits, textEnd, row: r });
+    const ids = [...shown].sort((a, b) => byId.get(a).start - byId.get(b).start || byId.get(a).name.localeCompare(byId.get(b).name, 'es'));
+    const ups = (id) => parentsOf(id).filter((p) => shown.has(p) && p !== id);
+    const downs = (id) => children.get(id).filter((c) => shown.has(c) && c !== id);
+    // Columna de cada género: el camino más largo desde los que no tienen padres visibles (si hay
+    // un ciclo, se corta donde se cierra), y luego cada uno se acerca a su hijo más cercano.
+    const col = new Map();
+    const depth = (id, path) => {
+      if (col.has(id)) return col.get(id);
+      path.add(id);
+      let d = 0;
+      for (const p of ups(id)) if (!path.has(p)) d = Math.max(d, depth(p, path) + 1);
+      path.delete(id);
+      col.set(id, d);
+      return d;
+    };
+    ids.forEach((id) => depth(id, new Set()));
+    for (const id of ids.slice().sort((a, b) => col.get(b) - col.get(a))) {
+      const next = downs(id).map((c) => col.get(c)).filter((c) => c > col.get(id));
+      if (next.length) col.set(id, Math.min(...next) - 1);
     }
-    const W = Math.max(fx(to) + 40, ...rows.map((e) => e + 20));
-    const H = 30 + rows.length * (ROW + 6) + 20;
-    const grid = el('g', { class: 'axis' }, svg);
-    const links = el('g', { class: 'links on' }, svg);
-    const bars = el('g', {}, svg);
-    const yearTags = el('g', { class: 'year-tags' }, svg);
-    drawAxis(grid, yearTags, fx, from, to, W, H);
-    const fpos = new Map();
-    for (const g of items) {
-      const L = lay.get(g.id);
-      const gy = 30 + L.row * (ROW + 6);
-      fpos.set(g.id, { x: L.gx, w: L.gw, y: gy + BAR_H / 2 });
-      const fam = FAMILIES[g.family];
-      const node = el('g', { class: 'g' + (g.id === focus.root ? ' root' : '') + (focus.open.has(g.id) ? ' expanded' : ''), 'data-id': g.id }, bars);
-      el('rect', { x: L.gx, y: gy, width: L.gw, height: BAR_H, fill: fam.color, 'fill-opacity': 0.85 }, node);
-      const t = el('text', { x: L.fits ? L.gx + 6 : L.gx + L.gw + 5, y: gy + 13 }, node);
-      t.textContent = g.name;
-      if (L.fits) t.setAttribute('style', 'fill:#111');
-      el('title', {}, node).textContent = `${g.name} (${g.start}–${g.end ?? '…'}) · clic para abrir la ficha`;
-      node.addEventListener('click', (e) => { e.stopPropagation(); open(g.id); });
+    const used = [...new Set(col.values())].sort((a, b) => a - b);
+    const cols = used.map((c) => ids.filter((id) => col.get(id) === c));
+    // Orden dentro de cada columna: por años y luego por la media de sus vecinos, para cruzar menos líneas.
+    const most = Math.max(...cols.map((c) => c.length));
+    const yOf = new Map();
+    const place = (c) => c.forEach((id, i) => yOf.set(id, PAD + ((most - c.length) / 2 + i) * (NODE_H + GAP_Y)));
+    cols.forEach(place);
+    for (let k = 0; k < 4; k++) for (const [list, nb] of [[cols, ups], [cols.slice().reverse(), downs]]) for (const c of list) {
+      const at = new Map(c.map((id) => { const ns = nb(id); return [id, ns.length ? ns.reduce((s, n) => s + yOf.get(n), 0) / ns.length : yOf.get(id)]; }));
+      c.sort((a, b) => at.get(a) - at.get(b));
+      place(c);
+    }
+    // Ancho de cada caja según su nombre; las columnas, del ancho de su caja más ancha.
+    const more = (id) => relatives(id).filter((r) => !shown.has(r)).length;
+    const hasBtn = (id) => id !== focus.root && (more(id) > 0 || focus.open.has(id));
+    // Se mide con la fuente de la web (en una caja de prueba); si la vista aún está oculta, se estima.
+    const probe = el('g', { class: 'node' }, svg);
+    const pt = el('text', { class: 'name' }, probe);
+    const textW = (s) => { pt.textContent = s; return pt.getComputedTextLength() || s.length * 7.4; };
+    const wOf = new Map(ids.map((id) => [id, Math.max(textW(byId.get(id).name), 70) + 26 + (hasBtn(id) ? BTN + 8 : 0)]));
+    probe.remove();
+    const xOf = new Map();
+    let cx = PAD;
+    for (const c of cols) {
+      c.forEach((id) => xOf.set(id, cx));
+      cx += Math.max(...c.map((id) => wOf.get(id))) + GAP_X;
+    }
+    const W = cx - GAP_X + PAD;
+    const H = PAD * 2 + most * (NODE_H + GAP_Y) - GAP_Y;
+    const defs = el('defs', {}, svg);
+    const mk = el('marker', { id: 'farrow', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+    el('path', { d: 'M0,1 L10,5 L0,9 z', fill: 'context-stroke' }, mk);
+    const links = el('g', {}, svg);
+    const nodes = el('g', {}, svg);
+    // Flechas de la influencia a lo influido; las que no tocan un género desplegado, más tenues.
+    for (const id of ids) for (const p of ups(id)) {
+      const x1 = xOf.get(p) + wOf.get(p), y1 = yOf.get(p) + NODE_H / 2;
+      const x2 = xOf.get(id) - 2, y2 = yOf.get(id) + NODE_H / 2;
+      const dx = Math.max(40, Math.abs(x2 - x1) / 2);
+      const near = focus.open.has(p) || focus.open.has(id);
+      el('path', { class: 'edge' + (near ? '' : ' far'), 'data-a': p, 'data-b': id, d: `M${x1},${y1} C${x1 + dx},${y1} ${x2 - dx},${y2} ${x2},${y2}`, stroke: FAMILIES[byId.get(p).family].color, 'marker-end': 'url(#farrow)' }, links);
+    }
+    for (const id of ids) {
+      const g = byId.get(id), fam = FAMILIES[g.family];
+      const gx = xOf.get(id), gy = yOf.get(id), gw = wOf.get(id);
+      const node = el('g', { class: 'node' + (id === focus.root ? ' root' : '') + (focus.open.has(id) ? ' expanded' : ''), 'data-id': id }, nodes);
+      el('rect', { class: 'box', x: gx, y: gy, width: gw, height: NODE_H, rx: 6, stroke: fam.color }, node);
+      el('rect', { x: gx, y: gy, width: 6, height: NODE_H, rx: 3, fill: fam.color }, node);
+      el('text', { class: 'name', x: gx + 14, y: gy + 17 }, node).textContent = g.name;
+      el('text', { class: 'yrs', x: gx + 14, y: gy + 32 }, node).textContent = `${g.start}–${g.end ?? '…'}`;
+      el('title', {}, node).textContent = `${g.name} (${g.start}–${g.end ?? '…'}) · ${fam.name} · clic para abrir la ficha`;
+      node.addEventListener('click', (e) => { e.stopPropagation(); open(id); });
+      // Al pasar por un género se resaltan sus flechas y sus vecinos.
+      node.addEventListener('mouseenter', () => {
+        const near = new Set([id, ...ups(id), ...downs(id)]);
+        svg.classList.add('hov');
+        nodes.querySelectorAll('.node').forEach((n) => n.classList.toggle('hit', near.has(n.dataset.id)));
+        links.querySelectorAll('.edge').forEach((p) => p.classList.toggle('hit', p.dataset.a === id || p.dataset.b === id));
+      });
+      node.addEventListener('mouseleave', () => svg.classList.remove('hov'));
       // Botón +/−: desplegar o plegar padres e hijos de este género.
-      const more = relatives(g.id).filter((r) => !shown.has(r)).length;
-      if (g.id !== focus.root && (more || focus.open.has(g.id))) {
-        const isOpen = focus.open.has(g.id);
-        const b = el('g', { class: 'fbtn', transform: `translate(${L.textEnd + 6},${gy})` }, bars);
+      if (hasBtn(id)) {
+        const isOpen = focus.open.has(id);
+        const b = el('g', { class: 'fbtn', transform: `translate(${gx + gw - BTN - 8},${gy + (NODE_H - BAR_H) / 2})` }, node);
         el('rect', { width: BTN, height: BAR_H, rx: 4 }, b);
         el('text', { x: BTN / 2, y: 13, 'text-anchor': 'middle' }, b).textContent = isOpen ? '−' : '+';
-        el('title', {}, b).textContent = isOpen ? 'Plegar sus relaciones' : `Desplegar sus influencias y herederos (${more} nuevos)`;
+        el('title', {}, b).textContent = isOpen ? 'Plegar sus relaciones' : `Desplegar sus influencias y herederos (${more(id)} nuevos)`;
         b.addEventListener('click', (e) => {
           e.stopPropagation();
-          isOpen ? focus.open.delete(g.id) : focus.open.add(g.id);
+          isOpen ? focus.open.delete(id) : focus.open.add(id);
           renderFocus();
         });
       }
     }
-    for (const g of items) for (const p of parentsOf(g.id)) {
-      if (!fpos.has(p) || !(focus.open.has(p) || focus.open.has(g.id))) continue;
-      el('path', { d: curve(fpos.get(p), fpos.get(g.id)), stroke: FAMILIES[byId.get(p).family].color }, links);
-    }
     svg.setAttribute('width', W);
     svg.setAttribute('height', H);
-    stickFocus();
-    const r = fpos.get(focus.root);
-    if (r) box.scrollLeft = Math.max(0, r.x - box.clientWidth / 3);
+    box.scrollLeft = Math.max(0, xOf.get(focus.root) - box.clientWidth / 3);
+    box.scrollTop = Math.max(0, yOf.get(focus.root) - box.clientHeight / 2);
   }
-  const stickFocus = stickTags($('#fscroller'));
-  $('#fsvg').addEventListener('click', (e) => { if (!e.target.closest('.g, .fbtn')) closePanel(); });
   function showFocus(id) {
     document.querySelector('.views button[data-view="focus"]').click();
     pickFocus(id);
@@ -503,7 +551,7 @@
     where: (r) => r.s ? `${esc(secName(r.s))} ${pdfLink(r.p)}` : '',
   });
   // Pestaña «Menciones» (menciones.js, común a todas las webs de Music_Books).
-  Menciones({ all, FAMILIES, esc, trackHtml, togglePlayer, open, portadas, data: window.ROCK_COVERS,
+  const menciones = Menciones({ all, FAMILIES, esc, trackHtml, togglePlayer, open, portadas, data: window.ROCK_COVERS,
     pageLink: (m) => pdfLink(m[1]) });
   function render() {
     $('#ftoggle').classList.toggle('active', !!state.q || state.off.size > 0);
